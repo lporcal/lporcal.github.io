@@ -2,15 +2,15 @@
 <html lang="es">
 
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-H6DX5RCE3M');
-</script>
-    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-H6DX5RCE3M');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +25,17 @@
 Icono generado con https://iconifier.net/-->
 
 <body>
-    <div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div>
+        <!--Configuración barra navegación con pantalla grande-->
+        <a id="Inicio"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="micontainer">
-                        <a id="Inicio" class="nav-link" href="../../index.html"
+                <ul class="navbar-nav text-center micontainer"
+                    style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html"
                             style="color:rgba(126, 167, 222, 0.938)">PORTFOLIO</a>
                     </li>
                 </ul>
@@ -43,42 +46,84 @@ Icono generado con https://iconifier.net/-->
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-between align-items-center" id="menuNav">
-                    <ul class="navbar-nav mx-auto text-center">
+                <div class="collapse navbar-collapse" id="menuNav">
 
-                        <li class="nav-item">
+                    <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
                             <a class="nav-link" href="../acercade/acercade.html"
-                                style="color:rgba(126, 167, 222, 0.938)">Acerca de</a>
+                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
                             <a class="nav-link" href="../experiencia/experiencia.html"
-                             style="color:rgba(126, 167, 222, 0.938)">Experiencia</a>
+                                style="color:rgba(126, 167, 222, 0.938)">Experiencia</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"
-                                style="color:rgba(126, 167, 222, 0.938)">Educación</a>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="#" style="color:rgba(126, 167, 222, 0.938)">
+                                Descarga CV en PDF
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color:rgba(126, 167, 222, 0.938)">Descarga CV en PDF</a>
-                        </li>
-
                     </ul>
-
-                    <div class="d-lg-block d-none micontainer">
-                        <a class="nav-link"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')" style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
-                    </div>
 
                     <ul class="navbar-nav d-lg-none micontainer">
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')" style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
+                            <a class="nav-link w-100 py-2"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                                style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <!--Configuración barra navegación con pantalla pequeña-->
+        <a id="Inicio"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
+            <div class="contenedornav">
+
+                <ul class="navbar-nav text-center micontainer"
+                    style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#botones" style="color:rgba(126, 167, 222, 0.938)">Información
+                            Personal</a>
+                    </li>
+                </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 30px">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+
+                    <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../acercade/acercade.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../experiencia/experiencia.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="#" style="color:rgba(126, 167, 222, 0.938)">
+                                Descarga CV en PDF</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-lg-block d-none">
+                        <a class="micontainer"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                            style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <hr class="colorlinea d-none d-lg-block" style="margin-top: 120px;">
+
+    <div class="class3">
         <div id="Cap 1" class="visible">
             <h2>“Jornada de Graduados 2015”</h2>
             <h3>En el marco de la “III Semana Nacional del emprendedor Tecnológico organizado por la Facultad de
