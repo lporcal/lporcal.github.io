@@ -2,15 +2,15 @@
 <html lang="es">
 
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-H6DX5RCE3M');
-</script>
-    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-H6DX5RCE3M');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +25,13 @@ Icono generado con https://iconifier.net/-->
 
 <body>
     <div>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a id="Inicio"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="micontainer">
-                        <a id="Inicio" class="nav-link" href="../../index.html"
+                        <a class="nav-link" href="../../index.html"
                             style="color:rgba(126, 167, 222, 0.938)">PORTFOLIO</a>
                     </li>
                 </ul>
@@ -42,122 +42,391 @@ Icono generado con https://iconifier.net/-->
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-between align-items-center" id="menuNav">
-                    <ul class="navbar-nav mx-auto text-center">
+                <div class="collapse navbar-collapse" id="menuNav">
 
+                    <!--Configuración botones con pantalla pequeña-->
+                    <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
                         <li class="nav-item">
-                            <a class="nav-link" href="../acercade/acercade.html"
-                                style="color:rgba(126, 167, 222, 0.938)">Acerca de</a>
+                            <a class="nav-link w-100 py-2" href="../acercade/acercade.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color:rgba(126, 167, 222, 0.938)">Educación</a>
+                            <a class="nav-link w-100 py-2"
+                                href="../licenciasycertificaciones/licenciasycertificaciones.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Certificaciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../licenciasycertificaciones/licenciasycertificaciones.html"
-                                style="color:rgba(126, 167, 222, 0.938)">Licencias y Certificaciones</a>
+                            <a class="nav-link w-100 py-2" href="#" style="color:rgba(126, 167, 222, 0.938)">
+                                Descarga CV en PDF</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color:rgba(126, 167, 222, 0.938)">Descarga CV en PDF</a>
-                        </li>
-
                     </ul>
 
-                    <div class="d-lg-block d-none micontainer">
-                        <a class="nav-link"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')" style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
+                    <!--Configuración botones con pantalla grande-->
+                    <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../acercade/acercade.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../licenciasycertificaciones/licenciasycertificaciones.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Certificaciones</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="#" style="color:rgba(126, 167, 222, 0.938)">
+                                Descarga CV en PDF
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Configuración boton CONTACTO con pantalla pequeña-->
+                    <div class="d-lg-block d-none">
+                        <a class="micontainer"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                            style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
                     </div>
 
+                    <!--Configuración boton CONTACTO con pantalla grande-->
                     <ul class="navbar-nav d-lg-none micontainer">
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')" style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
+                            <a class="nav-link w-100 py-2"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                                style="color: rgba(126, 167, 222, 0.938)">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </div>
 
-        <hr class="colorlinea" style="margin-top: 120px;">
+    <hr class="colorlinea" style="margin-top: 120px;">
 
-        <div id="div1" class="visible">
-            <h2>Supervisor de Producción de Refinería - Aceitera General Deheza S.A</h2>
-            <h3>Responsabilidades:</h3>
-            <p>- Supervisar el desarrollo de las actividades de los procesos productivos a cargo, efectuando el
-                seguimiento de variables del proceso y gestionando recursos para lograr el cumplimiento de los objetivos
-                del sector.</p>
-            <p>- Líder del equipo de producción el cual está conformado por 5 Team Leaders y 10 operadores de planta,
-                distribuidos en turnos rotativos y horario central.</p>
-            <p>- A cargo de 3 líneas de producción de Aceite Refinado vegetal</p>
-            <p>- Las líneas cuentan con certificaciones en norma HACCP y aplica metodología 5S</p>
-            <p>- Encargado de la planta de subproducto Oleínas manejada por 4 operadores en turno rotativo. Dicha planta
-                certificada en normas GMP e ISSC.</p>
-            <p>- Participación directa en los proyectos de inversión llevados adelante por el sector.</p>
-            <a href="https://www.agd.com.ar/es/complejo-general-deheza">Ir a la página de AGD S.A</a>
+    <div class="container my-12 mb-10">
+        <div class="row">
+            <div class="row" style="margin: 30px;">
+                <div class="col-md-10" class="infopersonal">
+                    <h3 id="notapersonal" class="letranegra">Experiencia</h3>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+
+                <div id="div6"> <!-- INGENIERO DE PROCESOS ARISTEO-->
+                    <h5 class="letraamarilla">Ingeniero de Procesos - Aristeo Ingeniería</h5>
+                    <li class="class2">
+                        En Aristeo Ingeniería me desempeño en el desarrollo y ejecución de proyectos para la industria
+                        de grasas y aceites, combinando experiencia técnica en procesos industriales con la gestión
+                        integral de servicios. Este rol me permitió no solo profundizar en el ámbito de la ingeniería de
+                        procesos, sino también abrirme a una faceta comercial, desarrollando habilidades de contacto
+                        directo con clientes y de presentación de servicios, lo que amplió significativamente mi perfil
+                        profesional.
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Septiembre 2024 - actualidad</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Responsabilidades y logros</h6>
+                    <div class="class2">
+                        <li>• Desarrollo de ingeniería básica y de detalle para proyectos del sector aceitero.</li>
+                        <li>• Ejecución de proyectos de optimización de procesos industriales.</li>
+                        <li>• Participación en proyectos de biocombustibles.</li>
+                        <li>• Diseño y simulación de procesos con herramientas de software especializadas (CHEMCAD,
+                            AutoCAD Plant 3D).</li>
+                        <li>• Elaboración de especificaciones técnicas de equipos y sistemas auxiliares</li>
+                        <li>• Desarrollo de manuales operativos y documentación técnica.</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Relacionado al análisis de datos</h6>
+                    <div class="class2">
+                        <li>• Desarrollo de modelos de cálculo y simulación para soporte a decisiones técnicas. </li>
+                        <li>• Análisis de información de proceso para evaluación de desempeño y detección de
+                            oportunidades de mejora. </li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Habilidades</h6>
+                    <div class="class2">
+                        <li>• AutoCad Plant 3D</li>
+                        <li>• Simulador de Procesos ChemCAD</li>
+                        <li>• Relación con el cliente</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Sitio Web</h6>
+                    <a class="class2" href="https://www.aristeoingenieria.com/">
+                        ARISTEO INGENIERIA</a>
+                </div>
+
+                <div class="lineadiv" style="margin: 50px;"></div>
+                <li>&nbsp;</li>
+
+                <div id="div1"> <!-- SUPERVISOR DE PROCESO DE REFINERIA-->
+                    <h5 class="letraamarilla">Supervisor de Producción de Refinería - Aceitera General Deheza S.A</h5>
+                    <li class="class2">
+                        Me desempeñé como Supervisor de Producción, liderando tres líneas de proceso en la planta:
+                        refinería de aceite, producción de oleínas y ácidos grasos. Mi objetivo fue garantizar el
+                        cumplimiento del plan de producción, gestionando los recursos humanos y materiales
+                        necesarios,
+                        y asegurando la eficiencia operativa dentro del marco normativo de la planta.
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Noviembre 2016 a Septiembre 2024</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Responsabilidades y logros</h6>
+                    <div class="class2">
+                        <li>• Supervisión y coordinación de las actividades
+                            productivas en tres líneas de proceso:
+                            refinería de aceite, oleínas y ácidos grasos.</li>
+                        <li>• Gestión y liderazgo de un equipo de 15 a 20 personas,
+                            asegurando el cumplimiento de objetivos de producción.</li>
+                        <li>• Seguimiento y control de los parámetros operativos críticos,
+                            garantizando la calidad del producto y la seguridad en las
+                            operaciones.</li>
+                        <li>• Desarrollo de balances de masa y energía para evaluar el
+                            desempeño de los procesos y optimizar rendimientos.</li>
+                        <li>• Elaboración de indicadores clave de gestión (KPIs) relacionados
+                            con producción, mermas, consumo de insumos y servicios, y control
+                            presupuestario, con reportes diarios, mensuales y anuales.</li>
+                        <li>• Coordinación del cumplimiento de normas y estándares de la planta,
+                            asegurando la trazabilidad y el orden operativo.</li>
+                        <li>• Implementación de mejoras continuas orientadas a aumentar la eficiencia
+                            y reducir costos en las operaciones.</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Relacionado al análisis de datos</h6>
+                    <div class="class2">
+                        <li>• Análisis y seguimiento de variables de proceso en tiempo real. </li>
+                        <li>• Desarrollo de indicadores de desempeño (KPIs) para control de producción,
+                            calidad
+                            y eficiencia.</li>
+                        <li>• Análisis de desvíos y detección de oportunidades de mejora. </li>
+                        <li>• Integración de datos operativos para evaluación de desempeño por turno y
+                            proceso.
+                        </li>
+                        <li>• Desarrollo de herramientas de análisis y automatización de datos para mejora
+                            de la
+                            gestión operativa.</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Habilidades</h6>
+                    <div class="class2">
+                        <li>• Microsoft Excel</li>
+                        <li>• MicroStrategy</li>
+                        <li>• SCADA</li>
+                        <li>• Balances de Masa y Energía</li>
+                        <li>• Análisis de Peligro y Puntos Críticos de Control</li>
+                        <li>• Presupuestos</li>
+                    </div>
+
+                </div>
+
+                <li>&nbsp;</li>
+
+                <div id="div2"> <!-- ASISTENTE DE PRODUCCIÓN-->
+                    <h5 class="letraamarilla">Asistente de operaciones de Refinería - Aceitera General Deheza S.A</h5>
+                    <li class="class2">
+                        Formé parte del equipo de proyectos encargado de la instalación y puesta en marcha de una nueva
+                        línea de producción de aceite refinado. Mi participación abarcó tanto la coordinación con
+                        proveedores como la generación de metodologías y capacitaciones para asegurar la eficiencia y
+                        sostenibilidad operativa del proyecto.
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Diciembre 2013 a Noviembre 2016</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Responsabilidades y logros</h6>
+                    <div class="class2">
+                        <li>• Participación en la instalación y puesta en marcha de una línea de producción de aceite
+                            refinado.</li>
+                        <li>• Coordinación con proveedores y contratistas para garantizar el cumplimiento de los
+                            objetivos del cronograma del proyecto.</li>
+                        <li>• Diseño e implementación de capacitaciones para el personal de planta, asegurando la
+                            correcta transferencia de conocimiento.</li>
+                        <li>• Implementación de mejoras continuas en líneas existentes, orientadas a aumentar la
+                            eficiencia y reducir costos en las operaciones.</li>
+                        <li>• Desarrollo y estandarización de metodologías de trabajo aplicadas a la operación y el
+                            mantenimiento.</li>
+                        <li>• Elaboración de documentación técnica: procedimientos operativos, instructivos y check
+                            lists
+                            para el control de variables críticas de proceso.</li>
+                        <li>Aporte al establecimiento de sistemas de control y seguimiento, que permitieron una
+                            operación más eficiente y confiable desde la puesta en marcha.</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Relacionado al análisis de datos</h6>
+                    <div class="class2">
+                        <li>• Análisis económico de proyectos y evaluación de inversiones </li>
+                        <li>• Estandarización de procedimientos para mejora del control operativo </li>
+                        <li>• Soporte en análisis de datos para seguimiento de desempeño de planta</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Habilidades</h6>
+                    <div class="class2">
+                        <li>• Microsoft Excel</li>
+                        <li>• Cálculo de Repago de Inversiones</li>
+                    </div>
+
+                </div>
+
+                <li>&nbsp;</li>
+
+                <div id="div3"> <!-- JOVENES PROFESIONALES-->
+                    <h5 class="letraamarilla">Ingeniero Junior - Aceitera General Deheza S.A</h5>
+                    <li class="class2">
+                        A través de un programa de formación para jovenes profesionales, se llevo adelante un
+                        entrenamiento teórico/práctico para desarrollar competencias en los diferentes sectores de la
+                        empresa.
+                        Se completo el desarrollo y participación en proyectos individuales y grupales, según
+                        necesidades del sector
+                        formador.
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Abril 2012 a Julio 2013</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Sitio Web</h6>
+                    <a class="class2" href="https://www.agd.com.ar/es/complejo-general-deheza">
+                        AGD S.A</a>
+                </div>
+
+                <div class="lineadiv" style="margin: 50px;"></div>
+                <li>&nbsp;</li>
+
+                <div id="div4"> <!-- PROMAIZ-->
+                    <h5 class="letraamarilla">Panel de Control / Supervisión - Promaiz S.A</h5>
+                    <li class="class2">
+                        Participé en la puesta en marcha de una planta de bioetanol, supervisando el montaje en campo y
+                        acompañando la transición hacia la operación productiva. Posteriormente, asumí la gestión de la
+                        producción en turnos rotativos, garantizando la continuidad operativa y el cumplimiento del plan
+                        de producción.
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Julio 2013 - Diciembre 2013</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Responsabilidades y logros</h6>
+                    <div class="class2">
+                        <li>• Supervisión del montaje en campo durante la instalación y puesta en marcha de la planta de
+                            bioetanol.</li>
+                        <li>• Gestión de la producción en turnos rotativos, asegurando la continuidad operativa y la
+                            eficiencia de la planta.</li>
+                        <li>• Operación integral de los procesos desde el Panel de Control (SCADA), monitoreando
+                            parámetros críticos.</li>
+                        <li>• Cumplimiento del plan de producción establecido, garantizando calidad, seguridad y
+                            eficiencia en las operaciones.</li>
+                        <li>• Coordinación con equipos de mantenimiento y soporte para la resolución de desvíos
+                            operativos.</li>
+                        <li>• Aporte a la consolidación de la fase inicial de operación de la planta, asegurando su
+                            estabilización tras la puesta en marcha.</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Relacionado al análisis de datos</h6>
+                    <div class="class2">
+                        <li>• Supervisión de variables de proceso en tiempo real. </li>
+                        <li>• Análisis de datos operativos para cumplimiento del plan de producción. </li>
+                        <li>• Interacción con sistemas digitales de control industrial</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Habilidades</h6>
+                    <div class="class2">
+                        <li>• SCADA</li>
+                        <li>• Gestión de la Producción</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Sitio Web</h6>
+                    <a class="class2" href="https://www.promaiz.com.ar/">
+                        PROMAIZ</a>
+                </div>
+
+                <div class="lineadiv" style="margin: 50px;"></div>
+                <li>&nbsp;</li>
+
+                <div id="div5"> <!-- GENERACION MEDITERRANEA-->
+                    <h5 class="letraamarilla">Pasante - Central Termoeléctrica Generación Mediterránea Modesto Maranzana
+                    </h5>
+                    <li class="class2">
+                        Contrato de practicas profesionales, donde se desarrollaron principalmente tareas relacionados
+                        al tratamiento de agua para utilización en la caldera
+                    </li>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <li>Abril 2011 a Junio 2011</li>
+                    </div>
+
+                    <li>&nbsp;</li>
+
+                    <h6 class="letraclara">Sitio Web</h6>
+                    <a class="class2" href=""https://www.albanesi.com.ar/en_central_termica_m_maranzana.php">
+                        GRUPO ALBANESI</a>
+                </div>
+
+                <div class="lineadiv" style="margin: 50px;"></div>
+                <li>&nbsp;</li>
+
+            </div>
         </div>
-
-        <hr>
-
-        <div id="div2" class="visible">
-            <h2>Asistente de operaciones de Refinería - Aceitera General Deheza S.A</h2>
-            <h3>Responsabilidades:</h3>
-            <p>Formar parte del equipo de conducción de Refinería: participación en la toma de decisiones para lograr
-                cumplir los objetivos del sector.</p>
-            <h4>Proyectos:</h4>
-            <p>- Nueva línea de Refinería: Análisis comparativo de proveedores. Estudio de repago de proyecto. Nexo
-                entre área de proyectos y planta de Refinería: encargado de comunicar las necesidades del sector.
-                Control de cumplimiento de garantía.</p>
-            <p>- Unificación de metodologías de trabajo: definir, diseñar y/o mejorar metodologías para las diferentes
-                tareas operativas, capacitar a personal y optimizar los procesos</p>
-            <p>- Mejora continua: propuesta de mejoras para el sector. </p>
-            <p>- Seguimiento de cronograma de parada anual: control de cumplimiento de plan de mantenimiento</p>
-        </div>
-
-        <hr>
-
-        <div id="div3" class="visible">
-            <h2>Programa Jovenes Profesionales - Aceitera General Deheza S.A</h2>
-            <h3>Responsabilidades</h3>
-            <p>- Entrenamiento teórico/práctico para desarrollar competencias en los diferentes sectores.</p>
-            <p>- Desarrollo y participación de proyectos individuales y grupales, según necesidades del sector formador.
-            </p>
-        </div>
-
-        <hr>
-
-        <div id="div4" class="visible">
-            <h2>Apoyo a puesta en marcha / Supervisor / Panel de Control - Promaiz S.A</h2>
-            <h3>Responsabilidades</h3>
-            <p>- Apoyo a puesta en marcha de planta de bioetanol: Supervisión de montaje en campo.</p>
-            <p>- Panel de control: operación y control de plantas. Responsable de producción en turno rotativo.</p>
-            <a href="https://www.promaiz.com.ar/nosotros">Ir a la página de Promaiz S.A</a>
-        </div>
-
-        <hr>
-
-        <div id="div5" class="visible">
-            <h2>Pasantía - Central Termoeléctrica Generación Mediterránea Modesto Maranzana</h2>
-            <h4>Tratamiento de agua para uso en caldera.</h4>
-            <h3>Responsabilidades</h3>
-            <p>- Análisis diarios de muestras de agua y dosificación de aditivos a calderas y torres de enfriamiento,
-                con el objetivo de mantener y/o corregir la calidad del agua utilizada en la caldera.</p>
-            <p>- Regeneración de equipos desmineralizadores y su puesta en servicio.</p>
-            <p>- Instrucción acerca de la organización e implementación de la norma ISO 9001 de Calidad versión 2008,
-                norma ISO 14001 de medio ambiente versión 2004 y estándar OHSAS 18001 de higiene y seguridad versión
-                2007.</p>
-            <p>- Manejo e interpretación de información y documentación de respaldo, para el funcionamiento del sector
-            </p>
-            <a href="https://www.albanesi.com.ar/en_central_termica_m_maranzana.php">Ir a la página del Grupo
-                Albanesi</a>
-        </div>
-
-        <hr>
-
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a id="Inicio" class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
-            <footer class="letraclara" style="float: right">Fecha última actualización CV: Febrero 2023</footer>
+            <a class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
+            <footer class="letrafooter">
+                <li>© 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos</li>
+                <li>Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages</li>
+                <li>Última actualización: Mayo 2026</li>
+            </footer>
         </div>
     </nav>
 
