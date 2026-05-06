@@ -24,17 +24,19 @@
 Icono generado con https://iconifier.net/-->
 
 <body>
+    <div>
+        <!--Configuración barra navegación con pantalla grande-->
         <a id="Inicio"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
-            <ul class="navbar-nav text-center micontainer"
-                style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
-                <li class="nav-item">
-                    <a class="nav-link" href="../../index.html" 
-                    style="color:rgba(126, 167, 222, 0.938)">PORTFOLIO</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav text-center micontainer"
+                    style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html"
+                            style="color:rgba(126, 167, 222, 0.938)">PORTFOLIO</a>
+                    </li>
+                </ul>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
                     aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation"
@@ -44,24 +46,6 @@ Icono generado con https://iconifier.net/-->
 
                 <div class="collapse navbar-collapse" id="menuNav">
 
-                    <!--Configuración botones con pantalla pequeña-->
-                    <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
-                        <li class="nav-item">
-                            <a class="nav-link w-100 py-2" href="../acercade/acercade.html"
-                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link w-100 py-2"
-                                href="../licenciasycertificaciones/licenciasycertificaciones.html"
-                                style="color:rgba(126, 167, 222, 0.938)">Certificaciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link w-100 py-2" href="#" style="color:rgba(126, 167, 222, 0.938)">
-                                Descarga CV en PDF</a>
-                        </li>
-                    </ul>
-
-                    <!--Configuración botones con pantalla grande-->
                     <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">
                         </li>
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
@@ -79,14 +63,6 @@ Icono generado con https://iconifier.net/-->
                         </li>
                     </ul>
 
-                    <!--Configuración boton CONTACTO con pantalla pequeña-->
-                    <div class="d-lg-block d-none">
-                        <a class="micontainer"
-                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
-                            style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
-                    </div>
-
-                    <!--Configuración boton CONTACTO con pantalla grande-->
                     <ul class="navbar-nav d-lg-none micontainer">
                         <li class="nav-item">
                             <a class="nav-link w-100 py-2"
@@ -98,12 +74,58 @@ Icono generado con https://iconifier.net/-->
             </div>
         </nav>
 
-    <hr class="colorlinea" style="margin-top: 120px;">
+        <!--Configuración barra navegación con pantalla pequeña-->
+        <a id="Inicio"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
+            <div class="contenedornav">
+
+                <ul class="navbar-nav text-center micontainer"
+                    style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#botones" style="color:rgba(126, 167, 222, 0.938)">Información
+                            Personal</a>
+                    </li>
+                </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 30px">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+
+                    <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../acercade/acercade.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Acerca de mi Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2"
+                                href="../licenciasycertificaciones/licenciasycertificaciones.html"
+                                style="color:rgba(126, 167, 222, 0.938)">Certificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="#" style="color:rgba(126, 167, 222, 0.938)">
+                                Descarga CV en PDF</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-lg-block d-none">
+                        <a class="micontainer"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                            style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+  <hr class="colorlinea d-none d-lg-block" style="margin-top: 100px;">
 
     <div class="container my-12 mb-10">
         <div class="row">
-            <div class="row" style="margin: 30px;">
-                <div class="col-md-10" class="infopersonal">
+            <div class="row" style="margin: 20px;">
+                <div class="col-md-12" class="infopersonal">
                     <h3 id="notapersonal" class="letranegra">Experiencia</h3>
                 </div>
             </div>
@@ -407,7 +429,7 @@ Icono generado con https://iconifier.net/-->
                     <li>&nbsp;</li>
 
                     <h6 class="letraclara">Sitio Web</h6>
-                    <a class="class2" href=""https://www.albanesi.com.ar/en_central_termica_m_maranzana.php">
+                    <a class="class2" href="" https://www.albanesi.com.ar/en_central_termica_m_maranzana.php">
                         GRUPO ALBANESI</a>
                 </div>
 
