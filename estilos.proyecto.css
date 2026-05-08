@@ -452,7 +452,7 @@ a {
     font-weight: bold;
     font-style: italic;
     font-family: "Rubik", sans-serif;
-    padding-left: 80px;
+    padding-left: 0px;
 }
 
 .letranegra:hover {
@@ -741,3 +741,7 @@ li {
     cursor: pointer;
 }
 
+.cuadroproyectosanalisis2 {
+    overflow: hidden;  /* recorta lo que sobresale */
+    position: relative;
+}
