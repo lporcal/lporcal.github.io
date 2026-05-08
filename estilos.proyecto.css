@@ -640,8 +640,8 @@ li {
     font-style: italic;
     text-decoration: none;
     border: none;
-    position: relative;
-    top: 68%;
+    position: absolute;
+    bottom: 15px;    
     left: 5%;
     font-size: 16px;
     transition-property: all;
