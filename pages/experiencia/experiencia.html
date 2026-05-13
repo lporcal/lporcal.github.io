@@ -3,30 +3,38 @@
 
 <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-H6DX5RCE3M');
+        if (window.location.hostname === 'lporcal.github.io') {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-H6DX5RCE3M');
+        }
     </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio LucasPorcal / Experiencia Laboral</title>
+    <title>Portfolio Lucas Porcal / Experiencia Laboral</title>
     <link rel="stylesheet" type="text/css" href="../../estilos.proyecto.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<link rel="icon" type="image/x-icon" href="../../Iconos/Icono Exp Laboral.ico" />
-<!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
+
+    <link rel="icon" type="image/x-icon" href="../../Iconos/Icono Exp Laboral.ico" />
+    <!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
 Icono generado con https://iconifier.net/-->
+</head>
 
 <body>
     <div>
-        <!--Configuración barra navegación con pantalla grande-->
         <a id="Inicio"></a>
+
+        <!--Configuración barra navegación con pantalla grande-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
@@ -65,7 +73,7 @@ Icono generado con https://iconifier.net/-->
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
-                            <a class="nav-link" href="docs/CV 2026 Lucas Porcal.pdf"
+                            <a class="nav-link" href="../../docs/CV 2026 Lucas Porcal.pdf"
                                 download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
@@ -73,7 +81,7 @@ Icono generado con https://iconifier.net/-->
 
                     <div class="d-lg-block d-none">
                         <a class="micontainer"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                             style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
                     </div>
                 </div>
@@ -81,7 +89,6 @@ Icono generado con https://iconifier.net/-->
         </nav>
 
         <!--Configuración barra navegación con pantalla pequeña-->
-        <a id="Inicio"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
             <div class="contenedornav">
 
@@ -103,7 +110,7 @@ Icono generado con https://iconifier.net/-->
                     <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2" href="docs/CV 2026 Lucas Porcal.pdf"
+                            <a class="nav-link w-100 py-2" href="../../docs/CV 2026 Lucas Porcal.pdf"
                                 download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
@@ -135,8 +142,7 @@ Icono generado con https://iconifier.net/-->
                         <div class="lineadiv" style="margin: 0px;"></div>
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2"
-                                href="../../pages/publicaciones/publicaciones.html"
+                            <a class="nav-link w-100 py-2" href="../../pages/publicaciones/publicaciones.html"
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
 
@@ -144,7 +150,7 @@ Icono generado con https://iconifier.net/-->
 
                         <div class="nav-item">
                             <a class="micontainer"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                                 style="color: rgba(126, 167, 222, 0.938); justify-content: center;">
                                 CONTACTO</a>
                         </div>
@@ -161,34 +167,36 @@ Icono generado con https://iconifier.net/-->
     <div class="infopersonal2 titulosecundario">
         <h3 class="letranegra">Experiencia</h3>
     </div>
-    
+
     <div class="container my-12 mb-10">
-        <div class="row">
+        <div class="row">           
 
             <div class="col-md-12">
 
-                <div id="div6"> <!-- INGENIERO DE PROCESOS ARISTEO-->
+                <div style="margin-top: 100px;"></div>
+
+                <div id="div1"> <!-- INGENIERO DE PROCESOS ARISTEO-->
                     <h5 class="letraamarilla">Ingeniero de Procesos - Aristeo Ingeniería</h5>
-                    <li class="class2">
+                    <p class="class2">
                         En Aristeo Ingeniería me desempeño en el desarrollo y ejecución de proyectos para la industria
                         de grasas y aceites, combinando experiencia técnica en procesos industriales con la gestión
                         integral de servicios. Este rol me permitió no solo profundizar en el ámbito de la ingeniería de
                         procesos, sino también abrirme a una faceta comercial, desarrollando habilidades de contacto
                         directo con clientes y de presentación de servicios, lo que amplió significativamente mi perfil
                         profesional.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Septiembre 2024 - actualidad</li>
+                        <p>Septiembre 2024 - actualidad</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Responsabilidades y logros</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Desarrollo de ingeniería básica y de detalle para proyectos del sector aceitero.</li>
                         <li>• Ejecución de proyectos de optimización de procesos industriales.</li>
                         <li>• Participación en proyectos de biocombustibles.</li>
@@ -196,57 +204,56 @@ Icono generado con https://iconifier.net/-->
                             AutoCAD Plant 3D).</li>
                         <li>• Elaboración de especificaciones técnicas de equipos y sistemas auxiliares</li>
                         <li>• Desarrollo de manuales operativos y documentación técnica.</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Relacionado al análisis de datos</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Desarrollo de modelos de cálculo y simulación para soporte a decisiones técnicas. </li>
                         <li>• Análisis de información de proceso para evaluación de desempeño y detección de
                             oportunidades de mejora. </li>
-                    </div>
+                        </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Habilidades</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• AutoCad Plant 3D</li>
                         <li>• Simulador de Procesos ChemCAD</li>
                         <li>• Relación con el cliente</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Sitio Web</h6>
                     <a class="class2" href="https://www.aristeoingenieria.com/">
                         ARISTEO INGENIERIA</a>
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
-                <li>&nbsp;</li>
+                <div class="lineadiv2" style="margin: 100px;"></div>                
 
-                <div id="div1"> <!-- SUPERVISOR DE PROCESO DE REFINERIA-->
+                <div id="div2"> <!-- SUPERVISOR DE PROCESO DE REFINERIA-->
                     <h5 class="letraamarilla">Supervisor de Producción de Refinería - Aceitera General Deheza S.A</h5>
-                    <li class="class2">
+                    <p class="class2">
                         Me desempeñé como Supervisor de Producción, liderando tres líneas de proceso en la planta:
                         refinería de aceite, producción de oleínas y ácidos grasos. Mi objetivo fue garantizar el
                         cumplimiento del plan de producción, gestionando los recursos humanos y materiales
                         necesarios,
                         y asegurando la eficiencia operativa dentro del marco normativo de la planta.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Noviembre 2016 a Septiembre 2024</li>
+                        <p>Noviembre 2016 a Septiembre 2024</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Responsabilidades y logros</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Supervisión y coordinación de las actividades
                             productivas en tres líneas de proceso:
                             refinería de aceite, oleínas y ácidos grasos.</li>
@@ -264,12 +271,12 @@ Icono generado con https://iconifier.net/-->
                             asegurando la trazabilidad y el orden operativo.</li>
                         <li>• Implementación de mejoras continuas orientadas a aumentar la eficiencia
                             y reducir costos en las operaciones.</li>
-                    </div>
+                        </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Relacionado al análisis de datos</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Análisis y seguimiento de variables de proceso en tiempo real. </li>
                         <li>• Desarrollo de indicadores de desempeño (KPIs) para control de producción,
                             calidad
@@ -281,44 +288,44 @@ Icono generado con https://iconifier.net/-->
                         <li>• Desarrollo de herramientas de análisis y automatización de datos para mejora
                             de la
                             gestión operativa.</li>
-                    </div>
+                        </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Habilidades</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Microsoft Excel</li>
                         <li>• MicroStrategy</li>
                         <li>• SCADA</li>
                         <li>• Balances de Masa y Energía</li>
                         <li>• Análisis de Peligro y Puntos Críticos de Control</li>
                         <li>• Presupuestos</li>
-                    </div>
+                    </ul>
 
                 </div>
 
-                <li>&nbsp;</li>
+                <div class="lineadiv2" style="margin: 100px;"></div>                
 
-                <div id="div2"> <!-- ASISTENTE DE PRODUCCIÓN-->
+                <div id="div3"> <!-- ASISTENTE DE PRODUCCIÓN-->
                     <h5 class="letraamarilla">Asistente de operaciones de Refinería - Aceitera General Deheza S.A</h5>
-                    <li class="class2">
+                    <p class="class2">
                         Formé parte del equipo de proyectos encargado de la instalación y puesta en marcha de una nueva
                         línea de producción de aceite refinado. Mi participación abarcó tanto la coordinación con
                         proveedores como la generación de metodologías y capacitaciones para asegurar la eficiencia y
                         sostenibilidad operativa del proyecto.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Diciembre 2013 a Noviembre 2016</li>
+                        <p>Diciembre 2013 a Noviembre 2016</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Responsabilidades y logros</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Participación en la instalación y puesta en marcha de una línea de producción de aceite
                             refinado.</li>
                         <li>• Coordinación con proveedores y contratistas para garantizar el cumplimiento de los
@@ -334,77 +341,76 @@ Icono generado con https://iconifier.net/-->
                             para el control de variables críticas de proceso.</li>
                         <li>Aporte al establecimiento de sistemas de control y seguimiento, que permitieron una
                             operación más eficiente y confiable desde la puesta en marcha.</li>
-                    </div>
+                        </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Relacionado al análisis de datos</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Análisis económico de proyectos y evaluación de inversiones </li>
                         <li>• Estandarización de procedimientos para mejora del control operativo </li>
                         <li>• Soporte en análisis de datos para seguimiento de desempeño de planta</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Habilidades</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Microsoft Excel</li>
                         <li>• Cálculo de Repago de Inversiones</li>
-                    </div>
+                    </ul>
 
                 </div>
 
-                <li>&nbsp;</li>
+                <div class="lineadiv2" style="margin: 100px;"></div>  
 
-                <div id="div3"> <!-- JOVENES PROFESIONALES-->
+                <div id="div4"> <!-- JOVENES PROFESIONALES-->
                     <h5 class="letraamarilla">Ingeniero Junior - Aceitera General Deheza S.A</h5>
-                    <li class="class2">
-                        A través de un programa de formación para jovenes profesionales, se llevo adelante un
+                    <p class="class2">
+                        A través de un programa de formación para jóvenes profesionales, se llevó adelante un
                         entrenamiento teórico/práctico para desarrollar competencias en los diferentes sectores de la
                         empresa.
-                        Se completo el desarrollo y participación en proyectos individuales y grupales, según
+                        Se completó el desarrollo y participación en proyectos individuales y grupales, según
                         necesidades del sector
                         formador.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Abril 2012 a Julio 2013</li>
+                        <p>Abril 2012 a Julio 2013</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Sitio Web</h6>
                     <a class="class2" href="https://www.agd.com.ar/es/complejo-general-deheza">
                         AGD S.A</a>
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
-                <li>&nbsp;</li>
+                <div class="lineadiv2" style="margin: 100px;"></div>  
 
-                <div id="div4"> <!-- PROMAIZ-->
+                <div id="div5"> <!-- PROMAIZ-->
                     <h5 class="letraamarilla">Panel de Control / Supervisión - Promaiz S.A</h5>
-                    <li class="class2">
+                    <p class="class2">
                         Participé en la puesta en marcha de una planta de bioetanol, supervisando el montaje en campo y
                         acompañando la transición hacia la operación productiva. Posteriormente, asumí la gestión de la
                         producción en turnos rotativos, garantizando la continuidad operativa y el cumplimiento del plan
                         de producción.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Julio 2013 - Diciembre 2013</li>
+                        <p>Julio 2013 - Diciembre 2013</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Responsabilidades y logros</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Supervisión del montaje en campo durante la instalación y puesta en marcha de la planta de
                             bioetanol.</li>
                         <li>• Gestión de la producción en turnos rotativos, asegurando la continuidad operativa y la
@@ -417,26 +423,26 @@ Icono generado con https://iconifier.net/-->
                             operativos.</li>
                         <li>• Aporte a la consolidación de la fase inicial de operación de la planta, asegurando su
                             estabilización tras la puesta en marcha.</li>
-                    </div>
+                        </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Relacionado al análisis de datos</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Supervisión de variables de proceso en tiempo real. </li>
                         <li>• Análisis de datos operativos para cumplimiento del plan de producción. </li>
                         <li>• Interacción con sistemas digitales de control industrial</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Habilidades</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• SCADA</li>
                         <li>• Gestión de la Producción</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Sitio Web</h6>
                     <a class="class2" href="https://www.promaiz.com.ar/">
@@ -444,45 +450,43 @@ Icono generado con https://iconifier.net/-->
 
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
-                <li>&nbsp;</li>
+                <div class="lineadiv2" style="margin: 100px;"></div>  
 
-                <div id="div5"> <!-- GENERACION MEDITERRANEA-->
+                <div id="div6"> <!-- GENERACION MEDITERRANEA-->
                     <h5 class="letraamarilla">Pasante - Central Termoeléctrica Generación Mediterránea Modesto Maranzana
                     </h5>
-                    <li class="class2">
-                        Contrato de practicas profesionales, donde se desarrollaron principalmente tareas relacionados
+                    <p class="class2">
+                        Contrato de prácticas profesionales, donde se desarrollaron principalmente tareas relacionadas
                         al tratamiento de agua para utilización en la caldera
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Periodo</h6>
                     <div class="class2">
-                        <li>Abril 2011 a Junio 2011</li>
+                        <p>Abril 2011 a Junio 2011</p>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 20px;"></div>
 
                     <h6 class="letraclara">Sitio Web</h6>
-                    <a class="class2" href="" https://www.albanesi.com.ar/en_central_termica_m_maranzana.php">
+                    <a class="class2" href="https://www.albanesi.com.ar/en_central_termica_m_maranzana.php"
+                        target="_blank">
                         GRUPO ALBANESI</a>
-                </div>
-
-                <div class="lineadiv" style="margin: 50px;"></div>
-                <li>&nbsp;</li>
-
+                </div>               
             </div>
         </div>
     </div>
+
+    <div class="lineadiv2" style="margin: 100px;"></div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
             <footer class="letrafooter">
-                <li>© 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos</li>
-                <li>Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages</li>
-                <li>Última actualización: Mayo 2026</li>
+                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: Mayo 2026<br>
             </footer>
         </div>
     </nav>
