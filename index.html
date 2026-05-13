@@ -3,12 +3,18 @@
 
 <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-H6DX5RCE3M');
+        if (window.location.hostname === 'lporcal.github.io') {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-H6DX5RCE3M');
+        }
     </script>
 
     <meta charset="UTF-8">
@@ -34,8 +40,9 @@ Icono generado con https://iconifier.net/-->
 <body>
 
     <div>
-        <!--Configuración barra navegación con pantalla grande-->
         <a id="Inicio"></a>
+
+        <!--Configuración barra navegación con pantalla grande-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
@@ -98,7 +105,7 @@ Icono generado con https://iconifier.net/-->
 
                     <div class="d-lg-block d-none">
                         <a class="micontainer"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                            href="javascript:ventanaAuxiliar('pages/formularios/formulariocontacto.html')"
                             style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
                     </div>
                 </div>
@@ -110,7 +117,6 @@ Icono generado con https://iconifier.net/-->
 
 
         <!--Configuración barra de navegación con pantalla pequeña-->
-        <a id="Inicio"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
             <div class="contenedornav">
 
@@ -180,7 +186,7 @@ Icono generado con https://iconifier.net/-->
 
                         <div class="nav-item">
                             <a class="micontainer"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                                href="javascript:ventanaAuxiliar('pages/formularios/formulariocontacto.html')"
                                 style="color: rgba(126, 167, 222, 0.938); justify-content: center;">
                                 CONTACTO</a>
                         </div>
@@ -204,7 +210,7 @@ Icono generado con https://iconifier.net/-->
         </div>
 
         <button class="botonacceso2">
-            <a style="color: rgb(232, 219, 35);" href="pages/experiencia/experiencia.html#div4">Más acerca de la
+            <a style="color: rgb(232, 219, 35);" href="pages/experiencia/experiencia.html#div5">Más acerca de la
                 imagen</a>
         </button>
     </div>
@@ -244,7 +250,7 @@ Icono generado con https://iconifier.net/-->
                     simulaciones, o proyectos de ingeniería completos.">
                     Aquí vas a encontrar una selección de proyectos en los que he trabajado, principalmente en áreas
                     industriales,
-                    pero desde diferentes perspectivas, como lo pueden ser desde el analisis de datos, la
+                    pero desde diferentes perspectivas, como lo pueden ser desde el análisis de datos, la
                     automatización,
                     simulaciones, o proyectos de ingeniería completos.
                 </p>
@@ -261,14 +267,14 @@ Icono generado con https://iconifier.net/-->
                     perfil” o contactarme directamente.</p>
 
                 <p class="letraclara" style="text-align: center;margin: 30px">
-                    !Gracias por visitar este espacio!
+                    ¡Gracias por visitar este espacio!
                 </p>
 
                 <button class="botonacceso">
                     <a style="color: rgba(126, 167, 222, 0.938);" href="pages/acercade/acercade.html">Más acerca de mi
                         Perfil...</a>
                 </button>
-                
+
             </div>
         </div>
     </div>
@@ -308,10 +314,8 @@ Icono generado con https://iconifier.net/-->
 
             <div class="infopersonal titulosecundario">
                 <h3 class="letranegra">Información Personal</h3>
-                <h7 class="letragris" style="font-style: italic; padding-left: 80px;">Presione sobre el item para
-                    desplegar la
-                    información.
-                </h7>
+                <p class="letragris" style="font-style: italic; padding-left: 80px;">Presione sobre el item para
+                    desplegar la información.</p>
             </div>
 
             <div class="d-grid gap-0">
@@ -327,18 +331,24 @@ Icono generado con https://iconifier.net/-->
                             <div class="container my-4 mb-3">
                                 <h5 class="letraamarilla">Nacionalidad</h5>
                                 <h6 class="letraclara">🇦🇷 Argentino</h6>
-                                <li>&nbsp;</li>
+                                <div style="margin-top: 40px;"></div>
+
                                 <h5 class="letraamarilla">Fecha de Nacimiento</h5>
                                 <h6 class="letraclara">📆01/11/1986</h6>
-                                <li>&nbsp;</li>
+                                <div style="margin-top: 40px;"></div>
+
                                 <h5 class="letraamarilla">Dirección</h5>
                                 <h6 class="letraclara">🏘️Córdoba, Argentina</h6>
-                                <li>&nbsp;</li>
+                                <div style="margin-top: 40px;"></div>
+
                                 <h5 class="letraamarilla">Teléfono</h5>
                                 <h6 class="letraclara">📱+54 358 4817343</h6>
-                                <li>&nbsp;</li>
+                                <div style="margin-top: 40px;"></div>
+
                                 <h5 class="letraamarilla">E-mail</h5>
                                 <h6 class="letraclara">📧 lucas.porcal@outlook.com</h6>
+                                <div style="margin-top: 40px;"></div>
+
                                 <div class="col-md-5"></div>
                             </div>
                         </div>
@@ -381,9 +391,11 @@ Icono generado con https://iconifier.net/-->
                                         <h5 class="letraamarilla">Universitaria</h5>
                                         <h6 class="letraclara">Universidad Nacional de Río Cuarto: Ingeniero Químico.
                                         </h6>
-                                        <li class="class2">Periodo: 2005 - 2012</li>
+                                        <p class="class2">Periodo: 2005 - 2012</p>
                                     </div>
                                 </div>
+
+                                <div class="lineadiv2" style="margin: 40px;"></div>
 
                                 <div class="row" style="gap: 60px;"><!--Unicorn Academy-->
                                     <div class="col-md-2">
@@ -397,13 +409,23 @@ Icono generado con https://iconifier.net/-->
                                     </div>
 
                                     <div class="col-md-6 mx-4">
-                                        <h5 class="letraamarilla">Bootcamp en Analisis de Datos</h5>
-                                        <h6 class="letraclara">Unicorn Academy - Analisis de Datos
+                                        <h5 class="letraamarilla">Bootcamp en Análisis de Datos</h5>
+                                        <h6 class="letraclara">Unicorn Academy - Análisis de Datos
                                         </h6>
-                                        <li class="class2">Periodo: 2025 - 2026 </li>
+                                        <p class="class2">Periodo: 2025 - 2026 </p>
                                     </div>
                                 </div>
+
+                                <div class="lineadiv2" style="margin: 40px;"></div>
+
+                                <button class="botonacceso">
+                                    <a style="color: rgba(126, 167, 222, 0.938);"
+                                        href="./pages/licenciasycertificaciones/licenciasycertificaciones.html">Más
+                                        acerca de Educación y Certificaciones...</a>
+                                </button>
+
                             </div>
+
                             <!--   <div class="col-md-1">
                                     <button class="btn btn-secundary" type="button">
                                         <a href="" class="micontainer4" style="width: max-content;">
@@ -413,8 +435,7 @@ Icono generado con https://iconifier.net/-->
                                 </div>
                             -->
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div style="margin-top: 40px;"></div>
 
                             <div style="display: none;"> <!--No quiero mostrar datos de secundario ni primario-->
                                 <div class="row" style="gap: 30px;"> (Secundario)
@@ -501,17 +522,16 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-8 mx-4">
                                     <h5 class="letraamarilla">Aristeo Ingeniería</h5>
                                     <h6 class="letraclara">Ingeniero de Procesos</h6>
-                                    <li class="class2">Periodo: Septiembre 2024 - Actualidad</li>
+                                    <p class="class2">Periodo: Septiembre 2024 - Actualidad</p>
+                                    <button class="btn btn-secundary" type="button" id="T1">
+                                        <a href="pages/experiencia/experiencia.html#div1" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T1">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div1')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div class="lineadiv2" style="margin: 50px;"></div>
 
                             <div class="row" style="gap: 30px;"><!--Supervisor AGD-->
                                 <div class="col-md-1"></div>
@@ -527,17 +547,16 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-8 mx-4">
                                     <h5 class="letraamarilla">Aceitera General Deheza S.A. Planta de Refinería</h5>
                                     <h6 class="letraclara">Supervisor de Producción de Refinería</h6>
-                                    <li class="class2">Periodo: Noviembre 2016 a Septiembre 2024</li>
+                                    <p class="class2">Periodo: Noviembre 2016 a Septiembre 2024</p>
+                                    <button class="btn btn-secundary" type="button" id="T1">
+                                        <a href="pages/experiencia/experiencia.html#div2" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T1">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div1')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div class="lineadiv2" style="margin: 50px;"></div>
 
                             <div class="row" style="gap: 30px;"><!--Asistente Operaciones AGD-->
                                 <div class="col-md-1"></div>
@@ -553,17 +572,16 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-8 mx-4">
                                     <h5 class="letraamarilla">Aceitera General Deheza S.A. Planta de Refinería</h5>
                                     <h6 class="letraclara">Asistente de operaciones de Refinería</h6>
-                                    <li class="class2">Periodo: Diciembre 2013 a Noviembre 2016 (3 años)</li>
+                                    <p class="class2">Periodo: Diciembre 2013 a Noviembre 2016 (3 años)</p>
+                                    <button class="btn btn-secundary" type="button" id="T2">
+                                        <a href="pages/experiencia/experiencia.html#div3" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T2">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div2')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div class="lineadiv2" style="margin: 50px;"></div>
 
                             <div class="row" style="gap: 30px;"><!--Promaiz-->
                                 <div class="col-md-1"></div>
@@ -579,17 +597,16 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-8 mx-4">
                                     <h5 class="letraamarilla">Promaiz S.A.</h5>
                                     <h6 class="letraclara">Apoyo a puesta en marcha / Supervisor / Panel de Control</h6>
-                                    <li class="class2">Periodo: Julio 2013 a Diciembre 2013 (6 meses)</li>
+                                    <p class="class2">Periodo: Julio 2013 a Diciembre 2013 (6 meses)</p>
+                                    <button class="btn btn-secundary" type="button" id="T2">
+                                        <a href="pages/experiencia/experiencia.html#div5" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T2">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div2')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div class="lineadiv2" style="margin: 50px;"></div>
 
                             <div class="row" style="gap: 30px;"><!--Jovenes Profesionales-->
                                 <div class="col-md-1"></div>
@@ -605,17 +622,16 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-8 mx-4">
                                     <h5 class="letraamarilla">Aceitera General Deheza S.A.</h5>
                                     <h6 class="letraclara">Programa Jovenes Profesionales</h6>
-                                    <li class="class2">Periodo: Abril 2012 a Julio 2013 (1 año y 4 meses)</li>
+                                    <p class="class2">Periodo: Abril 2012 a Julio 2013 (1 año y 4 meses)</p>
+                                    <button class="btn btn-secundary" type="button" id="T2">
+                                        <a href="pages/experiencia/experiencia.html#div4" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T2">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div2')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
-                            <hr class="colorlinea">
-                            <li>&nbsp;</li>
+                            <div class="lineadiv2" style="margin: 50px;"></div>
 
                             <div class="row" style="gap: 30px;"><!--Generación Mediterranea-->
                                 <div class="col-md-1"></div>
@@ -629,17 +645,17 @@ Icono generado con https://iconifier.net/-->
                                     </button>
                                 </div>
                                 <div class="col-md-8 mx-4">
-                                    <h5 class="letraamarilla">Central Termoeléctrica Generación Mediterránea Modesto
-                                        Maranzana</h5>
+                                    <h5 class="letraamarilla">Central Termoeléctrica Generación Mediterránea</h5>
+                                    <h5 class="letraamarilla">Modesto Maranzana</h5>
                                     <h6 class="letraclara">Pasantía en planta de tratamiento de agua para uso en
                                         caldera.</h6>
-                                    <li class="class2">Periodo: Abril 2011 a Junio 2011 (3 meses)</li>
+                                    <p class="class2">Periodo: Abril 2011 a Junio 2011 (3 meses)</p>
+                                    <button class="btn btn-secundary" type="button" id="T2">
+                                        <a href="pages/experiencia/experiencia.html#div6" target="_blank" class="class2"
+                                            style="text-align: right;">más
+                                            info</a>
+                                    </button>
                                 </div>
-                                <button class="btn btn-secundary" type="button" id="T2">
-                                    <a href="javascript:ventanaAuxiliar('experiencia.laboral.html#div2')"
-                                        class="class2">más
-                                        info</a>
-                                </button>
                             </div>
 
                         </div>
@@ -729,68 +745,113 @@ Icono generado con https://iconifier.net/-->
                 </div>
             </div>
 
-            <div style="display: none;"> <!-- Oculto por ahora-->
+            <div> <!--Boton Habilidades-->
                 <div class="fondoboton">
                     <button class="btn btn-secundary" type="button" id="Boton 5">
                         <h3 class="letrafija">Habilidades</h3>
                     </button>
-                    <hr class="colorlinea" style="margin: 0px;">
                 </div>
+                <div class="fondocajabotones">
+                    <div id="Habilidades">
+                        <div class="container my-4 mb-3">
+                            <h5 class="letraamarilla">Habilidades Técnicas</h5>
+                            <div style="margin-top: 10px;"></div>
+                            <ul class="letraclara" style="list-style: none; padding-left: 0;">
+                                <li>→ Manejo de herramientas digitales (SQL, Python, Excel, Power BI, MicroStrategy)
+                                </li>
+                                <li>→ Manejo de herramientas de ingeniería (AutoCad Plant 3D, Simulador de Procesos
+                                    ChemCad)</li>
+                                <li>→ Conocimientos en análisis de datos o interpretación de información</li>
+                                <li>→ Familiaridad con metodologías ágiles (Scrum, Kanban)</li>
+                                <li>→ Uso de plataformas colaborativas (GitHub)</li>
+                            </ul>
+                        </div>
 
-                <div>
-                    <ul id="Habilidades">
-                        <li class="class1">Informática</li>
-                        <li class="class4">Herramientas Office</li>
-                        <li class="class3">Excel, Word, Power Point, Outlook. Nivel avanzado</li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                        <li class="class4">Programas de Diseño:</li>
-                        <li class="class3">Autocad. SketchUp. Nivel intermedio</li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                        <li class="class4">Programación</li>
-                        <li class="class3">Software de simulación Pro II, Chemcad, Hint, Matlab. Nivel
-                            básico
-                        </li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                        <li class="class4">Otros Programas</li>
-                        <li class="class3">Microstrategy. Nivel intermedio</li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                        <li class="class1">Idioma</li>
-                        <li class="class4">Ingles:</li>
-                        <li class="class3">Oral: Nivel básico</li>
-                        <li class="class3">Escrito: Nivel básico</li>
-                        <li class="class3">Lectura: Nivel intermedio</li>
-                    </ul>
+                        <div class="container my-4 mb-3">
+                            <h5 class="letraamarilla">Habilidades Blandas</h5>
+                            <div style="margin-top: 10px;"></div>
+                            <ul class="letraclara" style="list-style: none; padding-left: 0;">
+                                <li>→ Pensamiento analítico</li>
+                                <li>→ Resolución de problemas</li>
+                                <li>→ Adaptabilidad al cambio</li>
+                                <li>→ Comunicación clara</li>
+                                <li>→ Trabajo en equipo</li>
+                                <li>→ Autonomía y proactividad</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
                 </div>
+                <div class="lineadiv" style="margin: 0px;"></div>
+            </div>
+        </div>
+
+        <div class="lineadiv" style="margin: 0px;"></div>
+
+        <div style="display:none;"> <!-- Oculto por ahora-->
+            <div class="fondoboton">
+                <button class="btn btn-secundary" type="button">
+                    <h3 class="letrafija">Habilidades</h3>
+                </button>
+                <hr class="colorlinea" style="margin: 0px;">
             </div>
 
-            <div style="display: none;"> <!-- Oculto por ahora-->
-                <div class="fondoboton">
-                    <button class="btn btn-secundary" type="button" id="Boton 6">
-                        <h3 class="letrafija">Referencias</h3>
-                    </button>
-                    <hr class="colorlinea" style="margin: 0px;">
-                </div>
+            <div>
+                <h6 class="letraclara">Habilidades Técnicas</h6>
+                <ul id="Habilidades">
+                    <li class="class1">Informática</li>
+                    <li class="class4">Herramientas Office</li>
+                    <li class="class3">Excel, Word, Power Point, Outlook. Nivel avanzado</li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                    <li class="class4">Programas de Diseño:</li>
+                    <li class="class3">Autocad. SketchUp. Nivel intermedio</li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                    <li class="class4">Programación</li>
+                    <li class="class3">Software de simulación Pro II, Chemcad, Hint, Matlab. Nivel
+                        básico
+                    </li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                    <li class="class4">Otros Programas</li>
+                    <li class="class3">Microstrategy. Nivel intermedio</li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                    <li class="class1">Idioma</li>
+                    <li class="class4">Ingles:</li>
+                    <li class="class3">Oral: Nivel básico</li>
+                    <li class="class3">Escrito: Nivel básico</li>
+                    <li class="class3">Lectura: Nivel intermedio</li>
+                </ul>
+            </div>
+        </div>
 
-                <div>
-                    <ul id="Referencias">
-                        <li class="class1">Referencia 1:</li>
-                        <li class="class3">Puesto:</li>
-                        <li class="class3">Contacto:</li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                        <li class="class1">Referencia 2:</li>
-                        <li class="class3">Puesto:</li>
-                        <li class="class3">Contacto:</li>
-                        <hr class="colorlinea">
-                        <li>&nbsp;</li>
-                    </ul>
-                </div>
+        <div style="display: none;"> <!-- Oculto por ahora-->
+            <div class="fondoboton">
+                <button class="btn btn-secundary" type="button" id="Boton 6">
+                    <h3 class="letrafija">Referencias</h3>
+                </button>
+                <hr class="colorlinea" style="margin: 0px;">
             </div>
 
+            <div>
+                <ul id="Referencias">
+                    <li class="class1">Referencia 1:</li>
+                    <li class="class3">Puesto:</li>
+                    <li class="class3">Contacto:</li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                    <li class="class1">Referencia 2:</li>
+                    <li class="class3">Puesto:</li>
+                    <li class="class3">Contacto:</li>
+                    <hr class="colorlinea">
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="transform: scaleX(-1);">
             <div class="infopersonal2 titulosecundario" id="proyectos">
                 <h3 class="letranegra">Proyectos Relevantes</h3>
             </div>
@@ -811,12 +872,12 @@ Icono generado con https://iconifier.net/-->
                                 <div class="col-md-3" style="padding: 0;">
                                     <a href="./pages/proyectos/analisis_de_datos.html" class="link-proyecto">
                                         <div class="cuadroproyectosanalisis">
-                                            <p class="textoproyectos">DATA ANALYTICS</p>
+                                            <p class="textoproyectos">ANÁLISIS DE DATOS</p>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-md-3" style="padding: 0;">
-                                    <a href="./pages/proyectos/programación.html" class="link-proyecto">
+                                    <a href="./pages/proyectos/programacion.html" class="link-proyecto">
                                         <div class="cuadroproyectosprogramacion">
                                             <p class="textoproyectos">PROGRAMACIÓN</p>
                                         </div>
@@ -824,8 +885,6 @@ Icono generado con https://iconifier.net/-->
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -933,7 +992,7 @@ Icono generado con https://iconifier.net/-->
                 </div>
             </div>
 
-            <div class="lineadiv"></div>
+            <div class="lineadiv2" style="margin: 100px;"></div>
 
             <!-- CONTENIDO DESTACADO - PREVIEW PUBLICACIONES-->
             <div class="infopersonal2 titulosecundario">
@@ -980,33 +1039,26 @@ Icono generado con https://iconifier.net/-->
                         Ver todas las publicaciones →
                     </a>
                 </div>
-            </div>
+            </div>         
 
-            <div class="lineadiv"></div>
-
-
-
-            <hr class="colorlinea">
-
-
-
-            <hr class="colorlinea">
+            <div class="lineadiv2" style="margin: 100px;"></div>
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
                     <footer class="letrafooter">
-                        <li>© 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos</li>
-                        <li>Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages</li>
-                        <li>Última actualización: Mayo 2026</li>
+                        © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                        Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                        Última actualización: Mayo 2026<br>
                     </footer>
                 </div>
             </nav>
+        </div>
 
-            <script src="programa.proyectofinal.js"></script>
+        <script src="programa.proyectofinal.js"></script>
 
-            <!--Bootstrap para funcionamiento de la barra de navegación-->
-            <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Bootstrap para funcionamiento de la barra de navegación-->
+        <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
