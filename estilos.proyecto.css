@@ -491,8 +491,8 @@ a {
 }
 
 p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     font-style: italic;
 }
 
@@ -572,10 +572,10 @@ img {
     text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
-    gap: 2px;
-    display: flex;
+.container ul, .col-md-12 ul, .class2 {
+    display: block;
+    flex-direction: unset;
+    padding-left: 15px;
 }
 
 li {
@@ -667,6 +667,17 @@ li {
     position: relative;
 }
 
+.lineadiv2 {
+    border: 0px;
+    height: 1px;
+    width: 90%;
+    background: linear-gradient(to right, rgba(126, 167, 222, 0.938), black);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    z-index: 100;
+    position: relative;
+}
+
 .cuadroproyectosingenieria {
     background-image: url(Imagenes/Promaiz3.jpg);
     background-size: cover;
@@ -728,6 +739,7 @@ li {
     background-color: transparent;
     font-size: 32px;
     color: rgba(201, 222, 248, 0.938);
+    text-align: center;
 }
 
 .link-proyecto {
@@ -744,4 +756,152 @@ li {
 .cuadroproyectosanalisis2 {
     overflow: hidden;  /* recorta lo que sobresale */
     position: relative;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6 {
+    scroll-margin-top: 200px;
+}
+
+#div1 {
+    position: relative;
+}
+
+#div1::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Imagenes/Aristeo2.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 2000px;
+    opacity: 0.03;
+    z-index: 0;
+}
+
+#div1 > * {
+    position: relative;
+    z-index: 1;
+}
+
+#div2 {
+    position: relative;
+}
+
+#div2::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Imagenes/agd_blancoynegro.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2500px;
+    opacity: 0.02;
+    z-index: 0;
+}
+
+#div2 > * {
+    position: relative;
+    z-index: 1;
+}
+
+#div3 {
+    position: relative;
+}
+
+#div3::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Imagenes/agd_blancoynegro.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2500px;
+    opacity: 0.02;
+    z-index: 0;
+}
+
+#div3 > * {
+    position: relative;
+    z-index: 1;
+}
+
+#div4 {
+    position: relative;
+}
+
+#div4::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Imagenes/agd_blancoynegro.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2500px;
+    opacity: 0.02;
+    z-index: 0;
+}
+
+#div4 > * {
+    position: relative;
+    z-index: 1;
+}
+
+#div5 {
+    position: relative;
+}
+
+#div5::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Imagenes/promaiz_blancoynegro2.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2500px;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+#div5 > * {
+    position: relative;
+    z-index: 1;
+}
+
+#div6 {
+    position: relative;
+}
+
+#div6::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1000px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#div6 > * {
+    position: relative;
+    z-index: 1;
 }
