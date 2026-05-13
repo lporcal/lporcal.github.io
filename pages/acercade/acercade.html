@@ -3,30 +3,38 @@
 
 <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-H6DX5RCE3M');
+        if (window.location.hostname === 'lporcal.github.io') {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-H6DX5RCE3M');
+        }
     </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio LucasPorcal / Acerca de</title>
+    <title>Portfolio Lucas Porcal / Acerca de</title>
     <link rel="stylesheet" type="text/css" href="../../estilos.proyecto.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<link rel="icon" type="image/x-icon" href="../../Iconos/Icono Exp Laboral.ico" />
-<!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
+
+    <link rel="icon" type="image/x-icon" href="../../Iconos/Icono Exp Laboral.ico" />
+    <!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
 Icono generado con https://iconifier.net/-->
+</head>
 
 <body>
     <div>
-        <!--Configuración barra navegación con pantalla grande-->
         <a id="Inicio"></a>
+
+        <!--Configuración barra navegación con pantalla grande-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
@@ -46,7 +54,7 @@ Icono generado con https://iconifier.net/-->
 
                 <div class="collapse navbar-collapse" id="menuNav">
 
-                    <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">                        
+                    <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
                             <a class="nav-link" href="../../pages/proyectos/proyectos.html"
                                 style="color:rgba(126, 167, 222, 0.938)">Proyectos</a>
@@ -64,7 +72,7 @@ Icono generado con https://iconifier.net/-->
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
-                            <a class="nav-link" href="docs/CV 2026 Lucas Porcal.pdf"
+                            <a class="nav-link" href="/../docs/CV 2026 Lucas Porcal.pdf"
                                 download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
@@ -72,7 +80,7 @@ Icono generado con https://iconifier.net/-->
 
                     <div class="d-lg-block d-none">
                         <a class="micontainer"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                             style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
                     </div>
                 </div>
@@ -80,7 +88,6 @@ Icono generado con https://iconifier.net/-->
         </nav>
 
         <!--Configuración barra navegación con pantalla pequeña-->
-        <a id="Inicio"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
             <div class="contenedornav">
 
@@ -102,7 +109,7 @@ Icono generado con https://iconifier.net/-->
                     <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2" href="docs/CV 2026 Lucas Porcal.pdf"
+                            <a class="nav-link w-100 py-2" href="/../docs/CV 2026 Lucas Porcal.pdf"
                                 download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
@@ -134,8 +141,7 @@ Icono generado con https://iconifier.net/-->
                         <div class="lineadiv" style="margin: 0px;"></div>
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2"
-                                href="../../pages/publicaciones/publicaciones.html"
+                            <a class="nav-link w-100 py-2" href="../../pages/publicaciones/publicaciones.html"
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
 
@@ -143,13 +149,13 @@ Icono generado con https://iconifier.net/-->
 
                         <div class="nav-item">
                             <a class="micontainer"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                                 style="color: rgba(126, 167, 222, 0.938); justify-content: center;">
                                 CONTACTO</a>
                         </div>
 
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
@@ -242,15 +248,15 @@ Icono generado con https://iconifier.net/-->
         </div>
     </div>
 
-    <hr>
+    <div class="lineadiv2" style="margin: 100px;"></div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
             <footer class="letrafooter">
-                <li>© 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos</li>
-                <li>Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages</li>
-                <li>Última actualización: Mayo 2026</li>
+                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: Mayo 2026<br>
             </footer>
         </div>
     </nav>
