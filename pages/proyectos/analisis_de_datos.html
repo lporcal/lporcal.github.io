@@ -3,30 +3,39 @@
 
 <head>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-H6DX5RCE3M');
+        if (window.location.hostname === 'lporcal.github.io') {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-H6DX5RCE3M');
+        }
     </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio LucasPorcal / Proyectos - Análisis de Datos</title>
+    <title>Portfolio Lucas Porcal / Proyectos - Análisis de Datos</title>
     <link rel="stylesheet" type="text/css" href="../../estilos.proyecto.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<link rel="icon" type="image/x-icon" href="../../Iconos/istockphoto-2180376595-1024x1024.jpg" />
-<!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
+
+    <link rel="icon" type="image/jpeg" href="../../Iconos/istockphoto-2180376595-1024x1024.jpg" />
+    <!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
 Icono generado con https://iconifier.net/-->
+
+</head>
 
 <body>
     <div>
-        <!--Configuración barra navegación con pantalla grande-->
         <a id="Inicio"></a>
+
+        <!--Configuración barra navegación con pantalla grande-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
@@ -69,15 +78,15 @@ Icono generado con https://iconifier.net/-->
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
-                            <a class="nav-link" href="docs/CV 2026 Lucas Porcal.pdf" download="CV 2026 Lucas Porcal.pdf"
-                                style="color:rgba(126, 167, 222, 0.938)">Descarga CV
+                            <a class="nav-link" href="../../docs/CV 2026 Lucas Porcal.pdf"
+                                download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
                     </ul>
 
                     <div class="d-lg-block d-none">
                         <a class="micontainer"
-                            href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                             style="color: rgba(126, 167, 222, 0.938); justify-content: center;">CONTACTO</a>
                     </div>
                 </div>
@@ -85,7 +94,6 @@ Icono generado con https://iconifier.net/-->
         </nav>
 
         <!--Configuración barra navegación con pantalla pequeña-->
-        <a id="Inicio"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
             <div class="contenedornav">
 
@@ -107,7 +115,7 @@ Icono generado con https://iconifier.net/-->
                     <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2" href="docs/CV 2026 Lucas Porcal.pdf"
+                            <a class="nav-link w-100 py-2" href="../../docs/CV 2026 Lucas Porcal.pdf"
                                 download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
@@ -147,8 +155,7 @@ Icono generado con https://iconifier.net/-->
                         <div class="lineadiv" style="margin: 0px;"></div>
 
                         <li class="nav-item">
-                            <a class="nav-link w-100 py-2"
-                                href="../../pages/publicaciones/publicaciones.html"
+                            <a class="nav-link w-100 py-2" href="../../pages/publicaciones/publicaciones.html"
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
 
@@ -156,7 +163,7 @@ Icono generado con https://iconifier.net/-->
 
                         <div class="nav-item">
                             <a class="micontainer"
-                                href="javascript:ventanaAuxiliar('/pages/formularios/formulariocontacto.html')"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
                                 style="color: rgba(126, 167, 222, 0.938); justify-content: center;">
                                 CONTACTO</a>
                         </div>
@@ -189,6 +196,8 @@ Icono generado con https://iconifier.net/-->
 
             <div class="col-md-12">
 
+                <div style="margin-top: 100px;"></div>
+
                 <div> <!-- BALANCE DE REFINERIA-->
 
                     <div>
@@ -198,38 +207,38 @@ Icono generado con https://iconifier.net/-->
                         </div>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h5 class="letraamarilla">Análisis de Eficiencia en Línea de Refinación de Aceite</h5>
                     <h6 class="letraclara">Análisis de datos operativos orientado a la mejora del rendimiento y control
                         del proceso de refinación.</h6>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Contexto</h6>
-                    <li class="class2"> En desarrollo...</li>
+                    <p class="class2"> En desarrollo...</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Objetivo</h6>
-                    <li class="class2"> Desarrollar indicadores claves que permitan poder obtener información disponible
+                    <p class="class2"> Desarrollar indicadores claves que permitan poder obtener información disponible
                         de
-                        manera diaria y acumulada, con el propósito de poder adelantarse a posibles desvios del proceso
+                        manera diaria y acumulada, con el propósito de poder adelantarse a posibles desvíos del proceso
                         y tomar
-                        acción de manera inmediata</li>
+                        acción de manera inmediata</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Herramientas Utilizadas</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>Excel</li>
                         <li>MicroStrategy</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Presentación</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Recolección de información de sistema (SCADA ➜ PLC ➜ SERVIDORES ➜ MicroStrategy)</li>
                         <li>• Limpieza y preparación de datos</li>
                         <li>• Análisis de datos de producción, confección de balances de masa y energía, cálculo de
@@ -237,20 +246,21 @@ Icono generado con https://iconifier.net/-->
                         <li>• Identificación de desvíos operativos y cuellos de botella</li>
                         <li>• Generación, seguimiento y análisis de indicadores clave (KPIs)</li>
                         <li>• Coordinación de acciones correctivas con el equipo operativo</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Resultados de su aplicación</h6>
-                    <li class="class2">
+                    <p class="class2">
                         Transformación del seguimiento de KPIs de medición mensual a monitoreo diario y acumulado,
                         alcanzando cobertura del 90% de los indicadores del proceso. Esto permitió detectar y corregir
                         desvíos en tiempo real, eliminando la pérdida de oportunidades de mejora que ocurría al
                         identificarlos al cierre del mes.
-                    </li>
+                    </p>
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
+
+                <div class="lineadiv2" style="margin: 100px;"></div>
 
 
                 <div> <!-- PLANILLA AUTOMÁTICA-->
@@ -262,36 +272,36 @@ Icono generado con https://iconifier.net/-->
                         </div>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h5 class="letraamarilla">Automatización de reportes productivos mediante integración de datos
                         (MicroStrategy)</h5>
                     <h6 class="letraclara">Desarrollo de una solución automatizada para la generación y distribución de
                         reportes productivos a partir de datos industriales.</h6>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Contexto</h6>
-                    <li class="class2"> En desarrollo...</li>
+                    <p class="class2"> En desarrollo...</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Objetivo</h6>
-                    <li class="class2"> Automatizar la planilla de producción de la planta, mejorando la calidad de la
-                        información y reducir el tiempo necesario de recolección de datos por parte del operador.</li>
+                    <p class="class2"> Automatizar la planilla de producción de la planta, mejorando la calidad de la
+                        información y reducir el tiempo necesario de recolección de datos por parte del operador.</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Herramientas</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>MicroStrategy</li>
                         <li>Excel</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Presentación</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Integración de datos provenientes de servidores conectados a PLCs de planta </li>
                         <li>• Consolidación automática de información de producción, consumos y variables operativas
                         </li>
@@ -299,18 +309,20 @@ Icono generado con https://iconifier.net/-->
                         <li>• Automatización del envío diario de reportes por correo electrónico a equipos operativos y
                             gerenciales </li>
                         <li>• Eliminación de carga manual de datos y estandarización de la información</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Resultados de su aplicación</h6>
-                    <li class="class2">
+                    <p class="class2">
                         Reducción de 2 hs diarias de operación destinadas a la generación de reportes. Mejora en la
                         disponibilidad y calidad de la información
-                    </li>
+                    </p>
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
+
+                <div class="lineadiv2" style="margin: 100px;"></div>
+
 
                 <div> <!-- CHECK LIST DE MANIOBRAS-->
 
@@ -321,7 +333,7 @@ Icono generado con https://iconifier.net/-->
                         </div>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h5 class="letraamarilla">Automatización de generación de check lists operativos mediante lógica
                         programada (Excel + VBA)</h5>
@@ -329,31 +341,31 @@ Icono generado con https://iconifier.net/-->
                         operativos en formato PDF, orientada a la estandarización de maniobras en planta y reducción de
                         errores humanos.</h6>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Contexto</h6>
-                    <li class="class2"> En desarrollo...</li>
+                    <p class="class2"> En desarrollo...</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Objetivo</h6>
-                    <li class="class2"> Generar automáticamente listas de verificación (checklists) de maniobras para la
+                    <p class="class2"> Generar automáticamente listas de verificación (checklists) de maniobras para la
                         apertura y cierre de válvulas manuales, permitiendo al operador obtener las acciones requeridas
                         para realizar movimientos de producto a partir del ingreso de distintas variables del proceso en
-                        un programa.</li>
+                        un programa.</p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Herramientas</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>Excel</li>
                         <li>Microsoft Visual Basic</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Presentación</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Diseño de lógica de decisión basada en inputs del usuario (origen, destino, tipo de
                             maniobra) </li>
                         <li>• Implementación de cálculos y reglas mediante funciones avanzadas de Excel (BUSCARV, SI,
@@ -366,18 +378,20 @@ Icono generado con https://iconifier.net/-->
                         <li>• Diseño de estructura flexible y escalable para incorporación de nuevas líneas de proceso y
                             configuraciones sin modificar el código base </li>
                         <li>• Generación automática de registros operativos para trazabilidad de maniobras </li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Resultados de su aplicación</h6>
-                    <li class="class2">
+                    <p class="class2">
                         Reducción en un 100% de errores operativos, mejora en la seguridad del proceso y estandarización
                         de procedimientos
-                    </li>
+                    </p>
                 </div>
 
-                <div class="lineadiv" style="margin: 50px;"></div>
+
+                <div class="lineadiv2" style="margin: 100px;"></div>
+
 
                 <div> <!-- MODELOS PREDICTIVOS EN INDUSTRIA-->
 
@@ -388,64 +402,62 @@ Icono generado con https://iconifier.net/-->
                         </div>
                     </div>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h5 class="letraamarilla">Optimización de procesos mediante análisis de datos históricos
                     </h5>
                     <h6 class="letraclara">Evaluación de variables de proceso para identificar patrones y oportunidades
                         de mejora.</h6>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Contexto</h6>
-                    <li class="class2">La industria aceitera forma parte del sector agroindustrial y tiene un rol
+                    <p class="class2">La industria aceitera forma parte del sector agroindustrial y tiene un rol
                         estratégico en la producción de aceites vegetales destinados al consumo alimenticio. Dentro del
                         proceso productivo, la etapa de refinación es fundamental para garantizar que el aceite crudo
-                        cumpla con los estándares de calidad requeridos por el mercado.</li>
+                        cumpla con los estándares de calidad requeridos por el mercado.</p>
 
-                    <li class="class2"> El proceso de refinería implica distintas operaciones físicas y químicas, tales
+                    <p class="class2"> El proceso de refinería implica distintas operaciones físicas y químicas, tales
                         como
                         neutralizado, blanqueo y desodorizado, en las cuales intervienen diversos insumos y servicios.
                         La eficiencia de este proceso no solo impacta en la calidad final del producto, sino también en
-                        los costos de producción.</li>
+                        los costos de producción.</p>
 
-                    <li class="class2">La calidad del aceite crudo de materia prima puede presentar variaciones en
+                    <p class="class2">La calidad del aceite crudo de materia prima puede presentar variaciones en
                         parámetros
                         fisicoquímicos, lo que influye directamente en el comportamiento del proceso de refinación y en
                         el consumo de insumos necesarios para alcanzar la calidad requerida en el producto final. En
                         este contexto, el análisis de datos históricos del proceso permite identificar patrones,
                         relaciones y oportunidades de mejora en términos de eficiencia operativa y optimización de
-                        recursos.
+                        recursos.</p>
 
-                    </li>
-
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Objetivo</h6>
-                    <li class="class2">Realizar un análisis exploratorio y descriptivo de los datos del proceso de
+                    <p class="class2">Realizar un análisis exploratorio y descriptivo de los datos del proceso de
                         refinería de una
                         planta aceitera, con el fin de visualizar la eficiencia productiva del proceso identificar cómo
                         las variaciones en la calidad del aceite de materia prima y del producto refinado se relacionan
-                        con el consumo de insumos operativos. </li>
+                        con el consumo de insumos operativos. </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Herramientas</h6>
-                    <div class="class2">
-                        <li>Python 3.13.7</li>
-                        <li>Pandas 2.3.3</li>
-                        <li>Numpy 2.3.4</li>
-                        <li>Seaborn 0.13.2</li>
-                        <li>Matplotlib 3.10.8</li>
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Seaborn</li>
+                        <li>Matplotlib</li>
                         <li>Excel</li>
                         <li>Power BI</li>
                         <li>Archivos formato .csv</li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Presentación</h6>
-                    <div class="class2">
+                    <ul class="class2" style="list-style: none; padding-left: 0;">
                         <li>• Limpieza y preparación de datos </li>
                         <li>• Análisis exploratorio (EDA) </li>
                         <li>• Análisis de tendencias en variables operativas </li>
@@ -453,42 +465,38 @@ Icono generado con https://iconifier.net/-->
                         <li>• Generación de visualizaciones </li>
                         <li>• Generación de información para la mejora continua </li>
                         <li>• Soporte a decisiones operativas basadas en datos </li>
-                    </div>
+                    </ul>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <h6 class="letraclara">Resultados de su aplicación</h6>
-                    <li class="class2">
+                    <p class="class2">
                         Optimización de condiciones operativas y presentación de bases para desarrollo de análisis
                         predictivos.
                         Se identificaron variables de calidad de crudo, fácilmente obtenibles, que, mediante el análisis
                         de un gran volumen de datos, permitirían predecir parámetros de producción y calidad.
-                    </li>
+                    </p>
 
-                    <li>&nbsp;</li>
+                    <div style="margin-top: 10px;"></div>
 
                     <video width=100% height="315" controls>
                         <source src="../../videos/PBI Proyecto Datos Refinería.mp4" type="video/mp4">
                     </video>
 
                 </div>
-
-                <div class="lineadiv" style="margin: 50px;"></div>
-
-
             </div>
         </div>
     </div>
 
-    <hr>
+    <div class="lineadiv" style="margin: 100px;"></div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#Inicio" style="color:rgba(225, 243, 62, 0.938)">INICIO</a>
             <footer class="letrafooter">
-                <li>© 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos</li>
-                <li>Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages</li>
-                <li>Última actualización: Mayo 2026</li>
+                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: Mayo 2026<br>
             </footer>
         </div>
     </nav>
