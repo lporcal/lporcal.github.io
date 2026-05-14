@@ -53,3 +53,6 @@ function ventanaAuxiliar(ubicacion) {
     window.open(ubicacion,"Detalle de información", "width= 1000, height= 1500, scrollbars= NO")
 }
 
+function ventanaAuxiliarImg(ubicacion) {
+    window.open(ubicacion, "Detalle de información", "width= 600, height= 600, scrollbars= NO")
+}
