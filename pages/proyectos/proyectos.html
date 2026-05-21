@@ -24,9 +24,16 @@
     <link rel="stylesheet" type="text/css" href="../../estilos.proyecto.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-<link rel="icon" type="image/jpeg" href="../../Iconos/istockphoto-2180376595-1024x1024.jpg" />
-<!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script&family=Fuggles&family=Mooli&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="../../Iconos/istockphoto-2180376595-1024x1024.jpg" />
+    <!--Imagen tomada de https://www.pngegg.com/es/png-dlrlu
 Icono generado con https://iconifier.net/-->
 </head>
 
@@ -34,7 +41,7 @@ Icono generado con https://iconifier.net/-->
     <div>
         <a id="Inicio"></a>
 
-        <!--Configuración barra navegación con pantalla grande-->        
+        <!--Configuración barra navegación con pantalla grande-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
             <div class="contenedornav">
 
@@ -73,8 +80,8 @@ Icono generado con https://iconifier.net/-->
                                 style="color:rgba(126, 167, 222, 0.938)">Publicaciones</a>
                         </li>
                         <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
-                            <a class="nav-link" href="../../docs/CV 2026 Lucas Porcal.pdf" download="CV 2026 Lucas Porcal.pdf"
-                                style="color:rgba(126, 167, 222, 0.938)">Descarga CV
+                            <a class="nav-link" href="../../docs/CV 2026 Lucas Porcal.pdf"
+                                download="CV 2026 Lucas Porcal.pdf" style="color:rgba(126, 167, 222, 0.938)">Descarga CV
                                 en PDF</a>
                         </li>
                     </ul>
@@ -88,7 +95,7 @@ Icono generado con https://iconifier.net/-->
             </div>
         </nav>
 
-        <!--Configuración barra navegación con pantalla pequeña-->        
+        <!--Configuración barra navegación con pantalla pequeña-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
             <div class="contenedornav">
 
@@ -167,9 +174,55 @@ Icono generado con https://iconifier.net/-->
     </div>
 
     <div class="container my-12 mb-10">
-        <div class="row">
 
-            <div class="col-md-12">
+        <div class="grid-proyectos">
+
+            <!-- CARD 1: INGENIERIA -->
+            <a href="../../pages/proyectos/ingenieria.html" style="text-decoration: none; width: 100%;">
+                <div class="card-proyecto">
+                    <img src="../../../Imagenes/Promaiz3.jpg" alt="La imágen no pudo descargarse">
+                    <div class="card-body">
+                        <p class="card-titulo">INGENIERÍA</p>
+                        <p class="card-descripcion">Desarrolo de proyectos de ingeniería</p>
+                        <div class="card-tags">
+                            <span class="tag">Ver proyectos →</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- CARD 1: ANÁLISIS DE DATOS -->
+            <a href="../../pages/proyectos/analisis_de_datos/analisis_de_datos_tarj.html"
+                style="text-decoration: none; width: 100%;">
+                <div class="card-proyecto">
+                    <img src="../../Imagenes/analyst data.jpeg" alt="La imágen no pudo descargarse">
+                    <div class="card-body">
+                        <p class="card-titulo">ANÁLISIS DE DATOS</p>
+                        <p class="card-descripcion">Desarrolo de proyectos de análisis de datos</p>
+                        <div class="card-tags">
+                            <span class="tag">Ver proyectos →</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- CARD 1: PROGRAMACIÓN -->
+            <a href="../../pages/proyectos/programacion.html" style="text-decoration: none; width: 100%;">
+                <div class="card-proyecto">
+                    <img src="../..//Imagenes/programacion.jpg" alt="La imágen no pudo descargarse">
+                    <div class="card-body">
+                        <p class="card-titulo">PROGRAMACIÓN</p>
+                        <p class="card-descripcion">Desarrolo de proyectos de programación</p>
+                        <div class="card-tags">
+                            <span class="tag">Ver proyectos →</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- <div class="col-md-12">
 
                 <div class="container my-4 mb-3">
                     <div class="row">
@@ -177,7 +230,7 @@ Icono generado con https://iconifier.net/-->
                             <div class="container">
                                 <div class="row" style="gap: 20px;">
                                     <div class="col-md-1"></div>
-                                    <div class="col-md-3" style="padding: 0;">
+                                   <div class="col-md-3" style="padding: 0;">
                                         <a href="../../pages/proyectos/ingenieria.html" class="link-proyecto">
                                             <div class="cuadroproyectosingenieria">
                                                 <p class="textoproyectos">INGENIERIA</p>
@@ -185,7 +238,8 @@ Icono generado con https://iconifier.net/-->
                                         </a>
                                     </div>
                                     <div class="col-md-3" style="padding: 0;">
-                                        <a href="../../pages/proyectos/analisis_de_datos/analisis_de_datos_tarj.html" class="link-proyecto">
+                                        <a href="../../pages/proyectos/analisis_de_datos/analisis_de_datos_tarj.html"
+                                            class="link-proyecto">
                                             <div class="cuadroproyectosanalisis">
                                                 <p class="textoproyectos">ANÁLISIS DE DATOS</p>
                                             </div>
@@ -207,8 +261,10 @@ Icono generado con https://iconifier.net/-->
                 </div>
 
             </div>
-        </div>
+        </div>-->
+
     </div>
+
 
     <div class="lineadiv2" style="margin: 100px;"></div>
 
