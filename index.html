@@ -210,10 +210,213 @@
     <div class="fondoimagen">
         <!--Foto de Planta de Promaiz S.A en Alejandro Roca, Cba., Argentina-->
 
+        <!-- ANIMACIÓN CAÑERÍAS -->
+        <svg class="svg-overlay" viewBox="0 0 1320 830" preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur" />
+                    <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+
+                <!-- Recorridos trazados sobre las cañerías de la imagen -->
+
+                <!-- Ruta 1: Ducto grande centro levemente izquierda-->
+                <path id="pipe1" d="M 440,500 L 440,495 Q 455,440 475,495 L 475,550" fill="none" />
+
+                <!-- Ruta 2: Ducto grande abajo a la izquierda hacia derecha -->
+                <path id="pipe2" d="M 250,700 L 250,625 Q 255,625 255,625 L 405,605" fill="none" />
+
+                <!-- Ruta 3: Ducto central hacia abajo -->
+                <path id="pipe3" d="M 565,425 L 585,420 Q 595,430 595,430 L 600,510" fill="none" />
+
+                <!-- Ruta 4: gran recorrido sobre los tanques cilíndricos derechos -->
+                <path id="pipe4"
+                    d="M 950,350 L 950,330 Q 965,315 965,315 L 1000,305 Q 1000,300 1035,315 Q 1040,325 1015,325 L 915,350"
+                    fill="none" />
+
+                <!-- Ruta 5: Ducto grande en centro de imagen -->
+                <path id="pipe5" d="M 700,450 L 700,380 Q 685,370 685,370 L 660,360" fill="none" />
+
+                <!-- Ruta 6: ducto central etapa 1 -->
+                <path id="pipe6" d="M 675,450 L 675,385" fill="none" />
+
+                <!-- Ruta 7: Ducto central etapa 2 -->
+                <path id="pipe7" d="M 675,330 L 740,310" fill="none" />
+
+                <!-- Ruta 8: Ducto a tanques de la derecha -->
+                <path id="pipe8" d="M 900,450 Q 940,430 940,500" fill="none" />
+
+            </defs>
+
+            <!-- Trazado sutil de los recorridos (muy transparente, solo guía) -->
+            <use href="#pipe1" stroke="rgb(225, 181, 70,0.07)" stroke-width="7" fill="none" id="t1" />
+            <use href="#pipe2" stroke="rgba(100,200,255,0.07)" stroke-width="7" fill="none" id="t2" />
+            <use href="#pipe3" stroke="rgb(225, 181, 70,0.07)" stroke-width="7" fill="none" id="t3" />
+            <use href="#pipe4" stroke="rgb(225, 181, 70,0.07)" stroke-width="7" fill="none" id="t4" />
+            <use href="#pipe5" stroke="rgba(100,200,255,0.07)" stroke-width="7" fill="none" id="t5" />
+            <use href="#pipe6" stroke="rgba(100,200,255,0.07)" stroke-width="7" fill="none" id="t6" />
+            <use href="#pipe7" stroke="rgba(100,200,255,0.07)" stroke-width="7" fill="none" id="t7" />
+            <use href="#pipe8" stroke="rgba(100,200,255,0.07)" stroke-width="7" fill="none" id="t8" />
+
+            <!-- ===== PARTÍCULAS PIPE 1 ===== -->
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="6s" repeatCount="indefinite" begin="0s">
+                    <mpath href="#pipe1" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.5;0.5;0" keyTimes="0;0.05;0.15;0.88;1" dur="6s"
+                    repeatCount="indefinite" begin="0s" />
+            </circle>
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="6s" repeatCount="indefinite" begin="2s">
+                    <mpath href="#pipe1" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.15;0.88;1" dur="6s"
+                    repeatCount="indefinite" begin="2s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="6s" repeatCount="indefinite" begin="4s">
+                    <mpath href="#pipe1" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.15;0.88;1" dur="6s"
+                    repeatCount="indefinite" begin="4s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 2 ===== -->
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="8s" repeatCount="indefinite" begin="0.5s">
+                    <mpath href="#pipe2" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0,3;0,3;0" keyTimes="0;0.05;0.15;0.88;1" dur="8s"
+                    repeatCount="indefinite" begin="0.5s" />
+            </circle>
+            <circle r="3.5" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="8s" repeatCount="indefinite" begin="3.5s">
+                    <mpath href="#pipe2" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.15;0.88;1" dur="8s"
+                    repeatCount="indefinite" begin="3.5s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 3 ===== -->
+            <circle r="5" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="7s" repeatCount="indefinite" begin="1.2s">
+                    <mpath href="#pipe3" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.15;0.88;1" dur="7s"
+                    repeatCount="indefinite" begin="1.2s" />
+            </circle>
+            <circle r="3.5" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="7s" repeatCount="indefinite" begin="4s">
+                    <mpath href="#pipe3" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.15;0.88;1" dur="7s"
+                    repeatCount="indefinite" begin="4s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 4 (más lento, fluido pesado) ===== -->
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="10s" repeatCount="indefinite" begin="0.8s">
+                    <mpath href="#pipe4" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.12;0.9;1" dur="10s"
+                    repeatCount="indefinite" begin="0.8s" />
+            </circle>
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="10s" repeatCount="indefinite" begin="4.5s">
+                    <mpath href="#pipe4" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.12;0.9;1" dur="10s"
+                    repeatCount="indefinite" begin="4.5s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="10s" repeatCount="indefinite" begin="7.5s">
+                    <mpath href="#pipe4" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.12;0.9;1" dur="10s"
+                    repeatCount="indefinite" begin="7.5s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 5 (vapor, más rápido y blanco) ===== -->
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="0.3s">
+                    <mpath href="#pipe5" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="0.3s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="2.2s">
+                    <mpath href="#pipe5" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="2.2s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 6 (vapor, más rápido y blanco) ===== -->
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="0.3s">
+                    <mpath href="#pipe6" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="0.3s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="2.2s">
+                    <mpath href="#pipe6" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="2.2s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 7 (vapor, más rápido y blanco) ===== -->
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="0.3s">
+                    <mpath href="#pipe7" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="0.3s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="2.2s">
+                    <mpath href="#pipe7" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="2.2s" />
+            </circle>
+
+            <!-- ===== PARTÍCULAS PIPE 8 (vapor, más rápido y blanco) ===== -->
+            <circle r="4" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="0.3s">
+                    <mpath href="#pipe8" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="0.3s" />
+            </circle>
+            <circle r="3" fill="rgb(225, 181, 70)" filter="url(#glow)">
+                <animateMotion dur="5s" repeatCount="indefinite" begin="2.2s">
+                    <mpath href="#pipe8" />
+                </animateMotion>
+                <animate attributeName="opacity" values="0;0;0.3;0.3;0" keyTimes="0;0.05;0.18;0.85;1" dur="5s"
+                    repeatCount="indefinite" begin="2.2s" />
+            </circle>
+        </svg>
+
+        <div class="tituloprincipal">
+            ...
+        </div>
+        <button class="botonacceso2">
+            ...
+        </button>
+
         <div class="tituloprincipal">
             <h1>PORTFOLIO PERSONAL</h1>
             <h1>LUCAS PORCAL</h1>
-            <h6>Análisis de Datos | Datos Industriales y KPIs Operativos | Industria de Grasas y Aceites | Proyectos
+            <h6>Análisis de Datos | Datos Industriales y KPIs Operativos | Industria de Grasas y Aceites |
+                Proyectos
                 Industriales | Programación </h6>
         </div>
 
