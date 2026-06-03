@@ -46,7 +46,7 @@ h6 {
 
 nav {
     font-family: "Rubik", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     padding-top: 50px;
     z-index: 1;
@@ -80,12 +80,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 150px;
+    height: 100px;
     background: linear-gradient(to right, black, #31555f);
     z-index: -1;
     padding-left: 50px;
-    padding-right: 50px;
-    height: 150px;
+    padding-right: 50px;    
 }
 
 @media (max-width: 992px) {
@@ -101,10 +100,10 @@ nav {
     align-items: center;
     justify-content: left;
     gap: 20px;
-    color: rgba(126, 167, 222, 0.938);
-    font-size: 20px;
+    color: rgba(201,222,248,0.938);
+    font-size: 18px;
     padding: 10px;
-    border: 2px solid rgba(126, 167, 222, 0.938);
+    border: 2px solid rgba(201,222,248,0.938);
     border-radius: 5px;
     text-decoration: none;
     margin-top: 12px;
@@ -191,7 +190,8 @@ a {
     transform: translateY(-250%);
     z-index: 0;
     overflow: hidden;
-    color: rgb(232, 219, 35);
+    border:1.5px solid #d4c547;
+    color: rgba(201,222,248,0.938);    
     width: fit-content;
     padding: 30px;
     border-radius: 20px;
@@ -371,7 +371,7 @@ a {
     left: 0%;
     z-index: 1;
     overflow: hidden;
-    color: rgb(232, 219, 35);
+    color: #d4c547;
     width: 100%;
     padding: 30px;
     border-radius: 1%;
@@ -423,7 +423,7 @@ a {
 .letraclara {
     color: rgba(201, 222, 248, 0.938);
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     position: relative;
@@ -435,7 +435,7 @@ a {
 }
 
 .letraamarilla {
-    color: rgb(232, 219, 35);
+    color: #d4c547;
     font-size: 32px;
     text-align: left;
 }
@@ -471,7 +471,7 @@ a {
     text-shadow: 1px 1px 2px rgb(63, 78, 78);
     position: relative;
     font-family: "Rubik", sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
 .row {
@@ -621,15 +621,16 @@ li {
     border: none;
     font-size: 16px;
     transition-property: all;
-    transition-duration: 1.5s;
+    transition-duration: 2s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
+    transition-delay: 0s;
     width: max-content;
 }
 
 .botonacceso:hover {
-    border: 2px solid rgba(201, 222, 248, 0.938);
-    border-radius: 5px;
+    border: 2px solid rgba(126,167,222,0.938);
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .botonacceso2 {
@@ -649,7 +650,7 @@ li {
 }
 
 .botonacceso2:hover {
-    border: 2px solid rgb(232, 219, 35);
+    border: 2px solid #d4c547;
     border-radius: 5px;
 }
 
@@ -761,7 +762,8 @@ li {
 #div3,
 #div4,
 #div5,
-#div6 {
+#div6,
+#Inicio {
     scroll-margin-top: 200px;
 }
 
@@ -1046,7 +1048,7 @@ li {
 }
 
 .card-proyecto .card-titulo {
-    color: rgb(232, 219, 35);
+    color: #d4c547;
     font-size: 16px;
     font-weight: 500;
     font-family: "Rubik", sans-serif;
