@@ -16,14 +16,16 @@ const i5 = 'Habilidades'
 const i6 = 'Referencias'
 let items = [i1, i2, i3, i4, i5, i6]
 
-// Recorre cada item y le indica que inicialmente debe estar la solapa cerrada
+// Recorre cada item - solo si existen en esta página y le indica que inicialmente debe estar la solapa cerrada
 items.forEach(function (item) {
-    document.getElementById(item).style.display = 'none';
+    const el = document.getElementById(item);
+    if (el) el.style.display = 'none';
 })
 
-//Recorre cada boton y le aplica la funcion informacionboton cuando se le hace click
+// Recorre cada boton - solo si existen en esta página y le aplica la funcion informacionboton cuando se le hace click
 botones.forEach(function (boton) {
-    document.getElementById(boton).addEventListener('click', function () {
+    const el = document.getElementById(boton);
+    if (el) el.addEventListener('click', function () {
         informacionboton(boton);
     });
 })
@@ -56,3 +58,7 @@ function ventanaAuxiliar(ubicacion) {
 function ventanaAuxiliarImg(ubicacion) {
     window.open(ubicacion, "Detalle de información", "width= 600, height= 600, scrollbars= NO")
 }
+
+const ULTIMA_ACTUALIZACION = "Junio 2026";
+const elFecha = document.getElementById("fecha-actualizacion");
+if (elFecha) elFecha.textContent = ULTIMA_ACTUALIZACION;
