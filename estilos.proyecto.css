@@ -84,7 +84,7 @@ nav {
     background: linear-gradient(to right, black, #31555f);
     z-index: -1;
     padding-left: 50px;
-    padding-right: 50px;    
+    padding-right: 50px;
 }
 
 @media (max-width: 992px) {
@@ -98,10 +98,10 @@ nav {
 .micontainer {
     display: block;
     text-align: center;
-    color: rgba(201,222,248,0.938);
+    color: rgba(201, 222, 248, 0.938);
     font-size: 18px;
     padding: 5px;
-    border: 2px solid rgba(201,222,248,0.938);
+    border: 2px solid rgba(201, 222, 248, 0.938);
     border-radius: 5px;
     text-decoration: none;
     margin-top: 12px;
@@ -188,8 +188,8 @@ a {
     transform: translateY(-250%);
     z-index: 0;
     overflow: hidden;
-    border:1.5px solid #d4c547;
-    color: rgba(201,222,248,0.938);    
+    border: 1.5px solid #d4c547;
+    color: rgba(201, 222, 248, 0.938);
     width: fit-content;
     padding: 30px;
     border-radius: 20px;
@@ -335,7 +335,7 @@ a {
 }
 
 .botonicono2 a {
-    color: rgba(201, 222, 248, 0.938);    
+    color: rgba(201, 222, 248, 0.938);
     display: flex;
     align-items: center;
 }
@@ -588,6 +588,13 @@ img {
     text-decoration: underline;
 }
 
+.class5 {
+    color: rgba(201, 222, 248, 0.938);
+    text-align: left;
+    font-style: normal;
+    font-family: "Rubik", sans-serif;
+}
+
 .container ul,
 .col-md-12 ul,
 .class2 {
@@ -649,7 +656,7 @@ li {
 }
 
 .botonacceso:hover {
-    border: 2px solid rgba(126,167,222,0.938);
+    border: 2px solid rgba(126, 167, 222, 0.938);
     border-radius: 20px;
     padding: 10px;
 }
@@ -1227,6 +1234,7 @@ li {
     .card-cert {
         flex-direction: column;
     }
+
     .card-cert-img {
         width: 100%;
         min-width: unset;
@@ -1253,5 +1261,247 @@ a.card-cert {
 }
 
 .card-cert-institucion {
-    font-style: italic; /* este sí lo queremos itálico */
+    font-style: italic;
+    /* este sí lo queremos itálico */
+}
+
+
+/* ── PROYECTOS CORRELACIONES ─────────────────────────────── */
+
+.correlations-section {
+    margin-top: 2rem;
+}
+
+.section-title {
+    color: rgb(232, 219, 35);
+    margin-bottom: 1rem;
+}
+
+/* Tabs */
+.corr-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(126, 167, 222, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.corr-tab {
+    background: transparent;
+    border: none;
+    color: rgba(201, 222, 248, 0.7);
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.corr-tab:hover {
+    color: rgba(201, 222, 248, 0.938);
+}
+
+.corr-tab.active {
+    color: rgb(232, 219, 35);
+    border-bottom-color: rgb(232, 219, 35);
+}
+
+/* Panels */
+.corr-panel {
+    display: none;
+}
+
+.corr-panel.active {
+    display: block;
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.corr-conclusion {
+    color: rgba(201, 222, 248, 0.938);
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.corr-caveat {
+    color: rgba(201, 222, 248, 0.7);
+    font-size: 0.9rem;
+    font-style: italic;
+    border-left: 2px solid rgba(232, 219, 35, 0.6);
+    padding-left: 0.8rem;
+    margin: 0.8rem 0 1.2rem;
+}
+
+/* Toggle detalle técnico */
+.corr-toggle {
+    background: rgba(49, 85, 95, 0.5);
+    border: 1px solid rgba(126, 167, 222, 0.4);
+    color: rgba(201, 222, 248, 0.938);
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s ease;
+}
+
+.corr-toggle:hover {
+    background: rgba(49, 85, 95, 0.8);
+}
+
+.corr-detail {
+    display: none;
+    margin-top: 1rem;
+}
+
+.corr-detail.open {
+    display: block;
+}
+
+/* Image row (la que ya tenías) */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.image-row figure {
+    flex: 1 1 260px;
+    max-width: 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(49, 85, 95, 0.5);
+    cursor: default;
+}
+
+.image-row figcaption {
+    margin-top: 0.5rem;
+    color: rgba(201, 222, 248, 0.938);
+    font-size: 0.85rem;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+.lightbox-overlay.open {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(49, 85, 95, 0.5);
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.02);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    color: rgba(201, 222, 248, 0.938);
+    font-size: 2.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: rgb(232, 219, 35);
+}
+
+.corr-next-steps {
+  background: rgba(49, 85, 95, 0.25);
+  border-left: 2px solid rgba(126, 167, 222, 0.6);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.corr-next-steps-title {
+  color: rgba(126, 167, 222, 0.938);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.corr-next-steps ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: rgba(201, 222, 248, 0.85);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.corr-next-steps li {
+  margin-bottom: 0.2rem;
+}
+
+
+/* ── RESULTADO DE LA APLICACION DE PROYECTOS ─────────────────────────────── */
+
+
+.project-synthesis {
+  background: rgba(49, 85, 95, 0.35);
+  border: 1px solid rgba(232, 219, 35, 0.3);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.synthesis-title {
+  color: rgb(232, 219, 35);
+  font-size: 1rem;
+  margin: 0 0 0.6rem;
+}
+
+.synthesis-text {
+  color: rgba(201, 222, 248, 0.938);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.synthesis-caveat {
+  color: rgba(201, 222, 248, 0.75);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
 }
