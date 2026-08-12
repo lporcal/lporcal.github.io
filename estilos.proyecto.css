@@ -1475,6 +1475,12 @@ a.card-cert {
   margin-bottom: 0.2rem;
 }
 
+.tab-status {
+  font-size: 0.75rem;
+  color: rgba(232, 219, 35, 0.7);
+  font-style: italic;
+}
+
 
 /* ── RESULTADO DE LA APLICACION DE PROYECTOS ─────────────────────────────── */
 
@@ -1504,4 +1510,88 @@ a.card-cert {
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;
+}
+
+.project-story {
+  margin: 1.5rem 0 2rem;
+}
+
+.story-title {
+  color: rgba(201, 222, 248, 0.938);
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-story p {
+  color: rgba(201, 222, 248, 0.85);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.project-story em {
+  color: rgb(232, 219, 35);
+  font-style: italic;
+}
+
+
+
+/* ── TABLAS COMPARATIVAS ─────────────────────────────── */
+
+
+.table-title {
+  color: rgba(201, 222, 248, 0.938);
+  font-size: 0.95rem;
+  margin: 1.2rem 0 0.6rem;
+}
+
+.corr-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.corr-table th {
+  background: rgba(49, 85, 95, 0.5);
+  color: rgba(201, 222, 248, 0.938);
+  text-align: left;
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid rgba(126, 167, 222, 0.3);
+  font-weight: 600;
+}
+
+.corr-table td {
+  padding: 0.45rem 0.7rem;
+  color: rgba(201, 222, 248, 0.85);
+  border-bottom: 1px solid rgba(126, 167, 222, 0.15);
+}
+
+.corr-table tbody tr:hover {
+  background: rgba(126, 167, 222, 0.08);
+}
+
+.corr-table td.sig {
+  color: rgb(232, 219, 35);
+  font-weight: 600;
+}
+
+.corr-table td.valido {
+  color: #7ec4a0;
+  font-weight: 600;
+}
+
+.corr-table td.no-valido {
+  color: rgba(201, 222, 248, 0.5);
+  font-style: italic;
+}
+
+.table-note {
+  font-size: 0.8rem;
+  color: rgba(201, 222, 248, 0.6);
+  margin-top: 0.3rem;
+}
+
+.sig-legend {
+  color: rgb(232, 219, 35);
+  font-weight: 600;
 }

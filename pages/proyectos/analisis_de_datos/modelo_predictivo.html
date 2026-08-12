@@ -241,7 +241,7 @@ Icono generado con https://iconifier.net/-->
 
             <div class="col-md-12">
 
-                <div> <!-- MODELOS PREDICTIVOS EN INDUSTRIA-->
+                <div> <!-- INICIO DE MODELOS PREDICTIVOS EN INDUSTRIA (CORRELACIONES)-->
 
                     <div id="proyecto_modelo_predictivo">
                         <div class="cuadroproyectosanalisis2">
@@ -275,9 +275,11 @@ Icono generado con https://iconifier.net/-->
                         los costos de producción.</p>
 
                     <p class="class5" style="padding-left: 10px;">La calidad del aceite crudo puede
-                        presentar variaciones en parámetros fisicoquímicos, lo que influye directamente en el comportamiento 
-                        del proceso de refinación y en el consumo de insumos necesarios para alcanzar la calidad requerida
-                        en el producto final. 
+                        presentar variaciones en parámetros fisicoquímicos, lo que influye directamente en el
+                        comportamiento
+                        del proceso de refinación y en el consumo de insumos necesarios para alcanzar la calidad
+                        requerida
+                        en el producto final.
                         En este contexto, el análisis de datos históricos del proceso permite identificar patrones,
                         relaciones y oportunidades de mejora en términos de eficiencia operativa y optimización de
                         recursos.</p>
@@ -286,8 +288,10 @@ Icono generado con https://iconifier.net/-->
 
                     <h6 class="letraclara">Objetivo</h6>
                     <p class="class5" style="padding-left: 10px;">Realizar un análisis exploratorio y descriptivo de los
-                        datos del proceso de refinería de una planta aceitera, con el fin de visualizar la eficiencia productiva del proceso 
-                        e identificar cómo las variaciones en la calidad de la materia prima y del producto refinado se relacionan entre si y
+                        datos del proceso de refinería de una planta aceitera, con el fin de visualizar la eficiencia
+                        productiva del proceso
+                        e identificar cómo las variaciones en la calidad de la materia prima y del producto refinado se
+                        relacionan entre si y
                         con el consumo de insumos operativos.</p>
 
                     <div style="margin-top: 40px;"></div>
@@ -323,26 +327,107 @@ Icono generado con https://iconifier.net/-->
 
                     <div style="margin-top: 40px;"></div>
 
+                    <div class="project-story">
+                        <h4 class="story-title">Cómo evolucionó este análisis</h4>
+
+                        <p>
+                            El proyecto nació como cierre de un curso de análisis de datos, con una muestra de apenas 12
+                            lotes
+                            y un dashboard en Power BI como entregable principal. Dentro de ese análisis exploratorio,
+                            surgió un
+                            hallazgo llamativo: la acidez del crudo, una medición simple y rápida de obtener, mostraba
+                            una
+                            correlación relativamente fuerte con el color del aceite refinado. Con tan pocos datos,
+                            decidí no
+                            publicar esa conclusión como definitiva y, en cambio, priorizar la ampliación de la muestra
+                            antes
+                            de sacar conclusiones.
+                        </p>
+
+                        <p>
+                            Con más de 80 lotes recopilados, la primera sorpresa fue que la correlación de acidez, que
+                            parecía
+                            tan prometedora, se diluía notablemente. En vez de descartar el hallazgo sin más, la
+                            pregunta pasó a
+                            ser <em>por qué</em> cambiaba tanto al ampliar la muestra. La respuesta apareció al graficar
+                            los datos
+                            en el tiempo: el dataset combinaba dos períodos muy distintos. Uno de operación normal, y
+                            otro
+                            correspondiente a la campaña 2022/23, marcada por una sequía histórica en Argentina que
+                            generó grano
+                            verde con niveles de clorofila muy por encima de lo habitual. Analizar ambos períodos
+                            juntos, sin
+                            distinguirlos, distorsionaba la relación real dentro de cada uno.
+                        </p>
+
+                        <p>
+                            Separar el análisis por campaña fue el punto de inflexión del proyecto. Validado ese
+                            criterio con
+                            varios chequeos (residuos del modelo en el tiempo, outliers concentrados en el período
+                            atípico,
+                            descarte de desfases temporales entre materia prima y producto terminado), el análisis
+                            avanzó de
+                            correlaciones simples a regresión multivariable (evaluando el efecto conjunto de todas las
+                            variables de calidad de crudo disponibles, en lugar de una a la vez). Ahí la clorofila del
+                            crudo se
+                            consolidó como el predictor más sólido y consistente del color final, mientras que la acidez
+                            original, la que había motivado todo el proyecto, no logró sostenerse como una variable
+                            confiable.
+                        </p>
+
+                        <p>
+                            El análisis se extendió luego a un segundo proceso de refinación, el físico, replicando la
+                            misma
+                            metodología. Aquí encontré una diferencia interesante entre procesos: mientras que en el
+                            proceso
+                            químico la acidez del crudo resultó prácticamente irrelevante, en el proceso físico se
+                            mantuvo
+                            significativa en los tres escenarios evaluados; un hallazgo que, con base en el
+                            conocimiento del
+                            proceso, podría explicarse por cómo cada tipo de refinación resuelve la eliminación de
+                            ácidos grasos
+                            en etapas distintas.
+                        </p>
+
+                        <p>
+                            El resultado de todo este recorrido no es un modelo predictivo terminado, sino un
+                            <strong>diagnóstico
+                                riguroso: qué variables de crudo importan, en qué medida, bajo qué condiciones, y qué
+                                falta
+                                todavía
+                                (principalmente, variables de proceso) para dar el siguiente paso hacia un modelo
+                                confiable.</strong>
+                            El
+                            detalle completo de cada etapa de este análisis está disponible en las pestañas a
+                            continuación.
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 40px;"></div>
+
                     <div class="project-synthesis">
                         <h4 class="synthesis-title">Resultado de la aplicación del proyecto</h4>
                         <p class="synthesis-text">
-                            <strong>Aplicación práctica:</strong> se identificaron variables de calidad del crudo, de
-                            obtención
-                            simple y rápida, que ,analizadas sobre un volumen de datos suficientemente amplio,
-                            permitirían predecir
-                            parámetros de producción y calidad del producto final. Esto se evidencia principalmente en
-                            la correlación
-                            entre <strong>la acidez del crudo y el color final del aceite refinado</strong>, que podría
-                            funcionar como
-                            indicador
-                            temprano de la dificultad de blanqueo y del esfuerzo de refinación requerido.
+                            <strong>Aplicación práctica:</strong> un análisis inicial sobre 12 lotes había sugerido que
+                            la acidez del crudo, una variable simple y rápida de medir, podría predecir la calidad del
+                            aceite refinado.
+                            Al ampliar la muestra a más de 80 lotes y aplicar regresión multivariable, esa relación no
+                            se sostuvo.
+                            En cambio, la <strong>clorofila del crudo</strong> mostró una relación consistente y
+                            significativa con el color del producto final, <strong>aunque su fuerza depende fuertemente
+                                de las
+                                condiciones de la cosecha</strong>:
+                            durante la campaña 2022/23, afectada por sequía y grano verde, esa relación se debilitó, lo
+                            que llevó a segmentar el análisis en dos períodos distintos.
                         </p>
                         <p class="synthesis-caveat">
-                            Para validar y aprovechar este potencial predictivo, es necesario ampliar la base de datos:
-                            tanto en
-                            cantidad de lotes analizados como en variables operativas actualmente ausentes en el
-                            registro
-                            (temperatura, vacío, tipo y calidad de tierras, entre otras).
+                            Incluso en el mejor escenario, la calidad de la materia prima explica cerca de la mitad de
+                            la variabilidad del color final; el resto depende de variables de proceso (temperatura,
+                            vacío,
+                            tierra de blanqueo, entre otras) que no forman parte de esta base de datos ampliada. Avanzar
+                            hacia un modelo
+                            predictivo requiere incorporar todas esas variables y ampliar significativamente el volumen
+                            de lotes.
                         </p>
                     </div>
 
@@ -362,6 +447,8 @@ Icono generado con https://iconifier.net/-->
                             <button class="corr-tab active" data-target="corr-1">Color vs. tierra de blanqueo</button>
                             <button class="corr-tab" data-target="corr-2">Color vs. acidez de crudo</button>
                             <button class="corr-tab" data-target="corr-3">Soda cáustica vs. acidez en línea</button>
+                            <button class="corr-tab" data-target="corr-4">Regresión multivariable (80 lotes)</button>
+                            <button class="corr-tab" data-target="corr-5">Proceso Químico vs. Proceso Físico</button>
                         </div>
 
                         <!-- Panel 1: Correlación color vs. tierra de blanqueo -->
@@ -379,6 +466,11 @@ Icono generado con https://iconifier.net/-->
                                 clave en este
                                 proceso, no estaba disponible en la base de datos.
                             </p>
+
+                            <button class="corr-tab" data-target="corr-2">
+                                Color vs. tierra de blanqueo <span class="tab-status">— pendiente de validación con más
+                                    datos</span>
+                            </button>
 
                             <button class="corr-toggle">Ver detalle técnico ▾</button>
                             <div class="corr-detail">
@@ -415,42 +507,60 @@ Icono generado con https://iconifier.net/-->
 
                         <!-- Panel 2: Correlación acidez vs. colores -->
                         <div class="corr-panel" id="corr-2">
-                            <p class="corr-conclusion"><strong>Conclusión:</strong> la acidez del crudo por lote mostró
-                                <strong>correlación moderada con el color
-                                    final del aceite refinado </strong> (0.67 amarillo, 0.62 rojo, imágenes 1 y 2 del
-                                detalle
-                                técnico), sugiriendo que una mayor acidez
-                                podría reflejar
-                                menor calidad global del crudo, con impacto indirecto en la dificultad del blanqueo.
+
+                            <p class="corr-conclusion">
+                                <strong>Conclusión:</strong> el análisis inicial sobre 12 lotes había mostrado una
+                                correlación
+                                relativamente fuerte entre la acidez del crudo y el color del aceite refinado (0.67 /
+                                0.62). Al ampliar
+                                la muestra a más de 80 lotes, esa relación se diluyó considerablemente. Un análisis más
+                                detallado reveló ademas que el nuevo dataset combinaba dos períodos de cosecha muy
+                                distintos: uno normal y otro
+                                afectado por la
+                                sequía histórica de la campaña 2022/23, que generó grano verde con clorofila muy por
+                                encima de lo habitual.
+                                Esa mezcla distorsionaba la relación real dentro de cada período.
                             </p>
-                            <p class="corr-conclusion">De confirmarse,
-                                la acidez (medición simple y rápida) podría usarse como indicador temprano del esfuerzo
-                                de refinación necesario.
-                            </p>
+
                             <p class="corr-caveat">
-                                ⚠️ Análisis basado en solo 12 lotes. Al ampliar la muestra con acidez diaria promediada
-                                por lote (imágenes 3, 4 y 5 del detalle técnico),
-                                la correlación bajó a 0.35/0.29.</p>
-                            <p class="corr-caveat">⚠️ Considerando la muestra de acidez diaria pero sin promediar por
-                                lote (dato diario puntual
-                                vs. color que es un promedio),
-                                bajó aún más a 0.17/0.14 (imágenes 6 y 7 del detalle técnico). La comparación diaria
-                                probablemente diluye la relación real
-                                por desalineación
-                                temporal entre variables instantáneas y promediadas.
+                                ⚠️ Al segmentar el análisis por período, la acidez del crudo no se sostuvo como
+                                predictor sólido del
+                                color final en ninguno de los dos escenarios. La variable que sí mostró una relación
+                                consistente fue
+                                la clorofila del crudo, cuyo análisis detallado, incluyendo el efecto de esta
+                                segmentación, se desarrolla
+                                en el panel de análisis multivariable (VER PESTAÑA DE REGRESIÓN MULTIVARIABLE)
                             </p>
+
                             <button class="corr-toggle">Ver detalle técnico ▾</button>
                             <div class="corr-detail">
 
                                 <div class="corr-next-steps">
-                                    <p class="corr-next-steps-title">Próximos pasos para validar la hipótesis</p>
+                                    <p class="corr-next-steps-title">Cómo se llegó a esta conclusión</p>
                                     <ul>
-                                        <li>Ampliar la base de datos con mayor número de lotes</li>
-                                        <li>Incorporar variables operativas: temperatura, vacío, tipo y calidad de
-                                            tierras</li>
-                                        <li>Analizar posibles retardos temporales entre acidez y color final</li>
+                                        <li>Con la muestra inicial de 12 lotes, ya se había detectado que la correlación
+                                            se debilitaba
+                                            al usar la acidez medida por el operador en vez de por el laboratorio, y al
+                                            analizar a
+                                            nivel diario en vez de por lote (de 0.67/0.62 a 0.17/0.14 según la
+                                            granularidad): una
+                                            primera señal de que la relación no era tan robusta como parecía.</li>
+                                        <li>Al ampliar a más de 80 lotes, esa señal se confirmó: la correlación general
+                                            se diluyó
+                                            fuertemente.</li>
+                                        <li>El análisis por período reveló además la causa estructural: dos campañas de
+                                            cosecha muy
+                                            distintas mezcladas en un mismo dataset.</li>
                                     </ul>
                                 </div>
+
+                                <div style="margin-top: 80px;"></div>
+
+                                <h6 class="letraclara">Imágenes primera etapa Proyecto</h6>
+                                <p class="class5" style="padding-left: 10px;">Tablas y gráficos correspondiente a las
+                                    correlaciones realizadas con una base de datos de 12 lotes de producción</p>
+
+                                <div style="margin-top: 40px;"></div>
 
                                 <div class="image-row">
                                     <figure>
@@ -499,13 +609,28 @@ Icono generado con https://iconifier.net/-->
                                         </figcaption>
                                     </figure>
                                 </div>
+
+                                <div style="margin-top: 80px;"></div>
+
+                                <h6 class="letraclara">Imágenes segunda etapa Proyecto</h6>
+                                <p class="class5" style="padding-left: 10px;">Tablas y gráficos correspondiente a las
+                                    correlaciones realizadas con una base de datos de 80 lotes de producción</p>
+
+                                <div style="margin-top: 40px;"></div>
+
+                                <div class="image-row">
+                                    <!-- acá podés sumar, por ejemplo, un scatter comparando el coeficiente
+           con 12 lotes vs. 80+ lotes combinados, si lo tenés armado -->
+                                </div>
+
                             </div>
                         </div>
 
                         <!-- Panel 3: Correlación acidez vs soda cáustica -->
                         <div class="corr-panel" id="corr-3">
                             <p class="corr-conclusion">
-                                <strong>Conclusión:</strong> se observó correlación positiva moderada (0.57) entre la
+                                <strong>Conclusión:</strong> se observó correlación positiva moderada (0.57) entre
+                                la
                                 acidez del
                                 crudo medida en línea y el consumo específico de soda cáustica (kg soda/ton crudo
                                 procesado):
@@ -523,6 +648,11 @@ Icono generado con https://iconifier.net/-->
                                 la medición y la dosificación real.
                             </p>
 
+                            <button class="corr-tab" data-target="corr-2">
+                                Acidez vs soda cáustica <span class="tab-status">— pendiente de validación con más
+                                    datos</span>
+                            </button>
+
                             <button class="corr-toggle">Ver detalle técnico ▾</button>
                             <div class="corr-detail">
                                 <div class="image-row">
@@ -537,92 +667,531 @@ Icono generado con https://iconifier.net/-->
                                         <img src="../../../Imagenes/proy_modelo_predictivo/tabla_corr_acidez_linea vs soda.png"
                                             alt="Tabla valores de correlación acidez en línea vs soda cáustica"
                                             class="expandable">
-                                        <figcaption>Tabla valores de correlación acidez en línea vs soda cáustica (click
+                                        <figcaption>Tabla valores de correlación acidez en línea vs soda cáustica
+                                            (click
                                             para ampliar)</figcaption>
                                     </figure>
                                     <figure>
                                         <img src="../../../Imagenes/proy_modelo_predictivo/pairplot acidez linea vs soda.png"
                                             alt="Pairplot acidez en línea vs soda cáustica" class="expandable">
-                                        <figcaption>7 - Pairplot acidez en línea vs soda cáustica (click para ampliar)
+                                        <figcaption>7 - Pairplot acidez en línea vs soda cáustica (click para
+                                            ampliar)
                                         </figcaption>
                                     </figure>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Panel 4: Correlación multivariable 80 lotes -->
+                        <div class="corr-panel" id="corr-4">
+                            <p class="corr-conclusion">
+                                <strong>Conclusión:</strong> el análisis de correlaciones individuales resultó
+                                insuficiente para
+                                explicar el color del aceite refinado. Al aplicar regresión multivariable, es decir,
+                                evaluando el
+                                efecto
+                                conjunto de todas las variables de calidad del crudo, la clorofila se confirmó como el
+                                predictor
+                                más sólido y consistente, alcanzando un R² ajustado de 0.50 en condiciones normales de
+                                cosecha.
+                                Sin embargo, el dataset combinado ocultaba un problema estructural: mezclaba dos
+                                campañas con
+                                condiciones muy distintas.
+                            </p>
+                            <p class="corr-caveat">
+                                ⚠️ Durante la campaña 2022/23, la sequía histórica en Argentina generó una alta
+                                proporción de grano
+                                verde con clorofila muy por encima de lo habitual. Analizar el dataset sin distinguir
+                                este contexto
+                                generaba una relación distorsionada: el
+                                coeficiente combinado no representaba con precisión la relación real dentro de cada
+                                campaña. Separar
+                                el análisis en dos períodos (normal y atípico) fue necesario para obtener conclusiones
+                                confiables.
+                            </p>
+
+                            <div class="corr-next-steps">
+                                <p class="corr-next-steps-title">Validaciones metodológicas aplicadas</p>
+                                <ul>
+                                    <li>Chequeo de multicolinealidad (VIF) entre variables de crudo, para asegurar que
+                                        los coeficientes
+                                        del modelo fueran interpretables de forma individual.</li>
+                                    <li>Análisis de residuos en el tiempo, antes y después de segmentar por campaña,
+                                        confirmando una
+                                        reducción notable en la dispersión de errores al separar los períodos.</li>
+                                    <li>Descarte de desfases temporales entre el ingreso de materia prima y la salida de
+                                        producto
+                                        terminado (12-15 hs, sin impacto relevante sobre datos diarios).</li>
+                                    <li>Verificación de que los outliers de calidad de producto coincidían mayormente
+                                        con el período
+                                        de cosecha atípica, evitando eliminarlos como simple "limpieza" y perder
+                                        información real
+                                        del proceso.</li>
+                                </ul>
+                            </div>
+
+                            <button class="corr-toggle">Ver detalle técnico ▾</button>
+                            <div class="corr-detail">
+                                <div class="image-row">
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/mapa_calor_variables_crudo.png"
+                                            alt="Mapa de calor de variables de crudo" class="expandable">
+                                        <figcaption>Mapa de calor de variables de crudo
+                                        </figcaption>
+                                    </figure>
+                                    <figure>
+                                    <img src="../../../Imagenes/proy_modelo_predictivo/scatter_clorofila_crudo.png"
+                                        alt="Clorofila de crudo por fecha" class="expandable">
+                                    <figcaption>Clorofila de crudo por fecha</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/dispersion_clorofila_color_am_df_qco.png"
+                                            alt="Dispersión clorofila vs color amarillo para proceso químico"
+                                            class="expandable">
+                                        <figcaption>Dispersión clorofila vs color amarillo para proceso químico
+                                        </figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/residuos_modelo_proceso_qco_separacion_periodos.png"
+                                            alt="Residuos del modelo por fecha para proceso químico separado por periodos"
+                                            class="expandable">
+                                        <figcaption>Residuos del modelo por fecha para proceso químico separado por
+                                            periodos</figcaption>
+                                    </figure>
+
+
+                                </div>
+
+                                <h5 class="table-title">Validez de los modelos multivariables</h5>
+                                <table class="corr-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Proceso</th>
+                                            <th>Etapa</th>
+                                            <th>Lotes</th>
+                                            <th>R² ajustado</th>
+                                            <th>Prob (F)</th>
+                                            <th>Modelo válido</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Combinado</td>
+                                            <td>84</td>
+                                            <td>0.388</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Normal</td>
+                                            <td>46</td>
+                                            <td>0.503</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Atípico</td>
+                                            <td>38</td>
+                                            <td>0.374</td>
+                                            <td>0.002</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Combinado</td>
+                                            <td>79</td>
+                                            <td>0.328</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Normal</td>
+                                            <td>41</td>
+                                            <td>0.169</td>
+                                            <td>0.052</td>
+                                            <td class="no-valido">No</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Atípico</td>
+                                            <td>38</td>
+                                            <td>0.115</td>
+                                            <td>0.132</td>
+                                            <td class="no-valido">No</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5 class="table-title">P-valores por variable (multivariable)</h5>
+                                <table class="corr-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Variable</th>
+                                            <th>Qco. Combinado</th>
+                                            <th>Qco. Normal</th>
+                                            <th>Qco. Atípico</th>
+                                            <th>Fco. Combinado</th>
+                                            <th>Fco. Normal</th>
+                                            <th>Fco. Atípico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Acidez crudo</td>
+                                            <td>0.087</td>
+                                            <td class="sig">0.012</td>
+                                            <td>0.154</td>
+                                            <td class="sig">0.004</td>
+                                            <td class="sig">0.037</td>
+                                            <td class="sig">0.040</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clorofila crudo</td>
+                                            <td class="sig">0.000</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.763</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.612</td>
+                                            <td>0.972</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color amarillo crudo</td>
+                                            <td>0.421</td>
+                                            <td>0.168</td>
+                                            <td>0.947</td>
+                                            <td>0.506</td>
+                                            <td>0.850</td>
+                                            <td>0.513</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color rojo crudo</td>
+                                            <td>0.266</td>
+                                            <td>0.449</td>
+                                            <td>0.507</td>
+                                            <td>0.288</td>
+                                            <td>0.272</td>
+                                            <td>0.477</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fósforo</td>
+                                            <td>0.188</td>
+                                            <td>0.157</td>
+                                            <td class="sig">0.005</td>
+                                            <td>0.908</td>
+                                            <td class="sig">0.011</td>
+                                            <td>0.144</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fósforo no hidratable</td>
+                                            <td class="sig">0.033</td>
+                                            <td>0.461</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.669</td>
+                                            <td>0.607</td>
+                                            <td class="sig">0.044</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="table-note">Valores en <span class="sig-legend">amarillo</span> indican
+                                    significancia estadística (p &lt; 0.05).</p>
+                            </div>
+                        </div>
+
+                        <!-- Panel 5: Diferencias refinado quimico - fisico -->
+                        <div class="corr-panel" id="corr-5">
+                            <p class="corr-conclusion">
+                                <strong>Conclusión:</strong> Hasta aquí todas las correlaciones se desarrollaron sobre
+                                un dataset con datos de proceso químico, es decir donde la acidez libre del aceite fue
+                                tratada con químicos para su eliminación. Al replicar el análisis multivariable sobre el
+                                proceso físico de
+                                refinación, la clorofila se mantuvo como la variable con mayor peso relativo, coherente
+                                con el
+                                proceso químico. Sin embargo, apareció una diferencia notable: la acidez del crudo
+                                mostró una
+                                relación estadísticamente significativa con el color final en los tres escenarios
+                                evaluados para
+                                el proceso físico (combinado, normal y atípico), algo que no ocurrió de forma
+                                consistente en el
+                                proceso químico.
+                            </p>
+                            <p class="corr-caveat">
+                                ⚠️ Los modelos multivariables del proceso físico, al segmentar por campaña, no
+                                alcanzaron significancia
+                                estadística global (R² ajustado de 0.17 y 0.11 respectivamente) — probablemente por
+                                tamaño de muestra
+                                insuficiente dentro de cada segmento. La relación de la acidez con el color, aunque
+                                consistente, debe
+                                tomarse como un hallazgo preliminar, pendiente de confirmar con más lotes.
+                            </p>
+
+                            <div class="corr-next-steps">
+                                <p class="corr-next-steps-title">Hipótesis de proceso a validar</p>
+                                <ul>
+                                    <li>En el proceso físico, la eliminación de ácidos grasos ocurre por destilación
+                                        dentro de la
+                                        misma etapa de desodorización/termoblanqueo, a diferencia del proceso químico,
+                                        donde se
+                                        remueven antes, en la neutralización.</li>
+                                    <li>Una mayor carga de ácidos grasos podría exigir más al desodorizador,
+                                        interfiriendo con la
+                                        decoloración que ocurre en esa misma etapa, lo cual explicaría por qué la
+                                        acidez del crudo
+                                        impacta más en el color final del proceso físico que en el químico.</li>
+                                </ul>
+                            </div>
+
+                            <button class="corr-toggle">Ver detalle técnico ▾</button>
+                            <div class="corr-detail">
+
+                                <div class="image-row">
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/residuos_modelo_df_qco_sin_separar.png"
+                                            alt="Residuos del modelo por fecha para proceso químico sin separar por periodos"
+                                            class="expandable">
+                                        <figcaption>Residuos del modelo por fecha para proceso químico sin separar por
+                                            periodos</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/residuo_modelo_df_fco_sin_separar.png"
+                                            alt="Residuos del modelo por fecha para proceso físico sin separar por periodos"
+                                            class="expandable">
+                                        <figcaption>Residuos del modelo por fecha para proceso físico sin separar por
+                                            periodos</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/clorofila_ref_proceso_fco.png"
+                                            alt="Clorofila refinado proceso físico" class="expandable">
+                                        <figcaption>Clorofila de refinado de proceso físico</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/clorofila_ref_proceso_qco.png"
+                                            alt="Clorofila refinado proceso químico" class="expandable">
+                                        <figcaption>Clorofila de refinado de proceso químico</figcaption>
+                                    </figure>
+                                </div>
+
+                                <h5 class="table-title">Validez de los modelos multivariables</h5>
+                                <table class="corr-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Proceso</th>
+                                            <th>Etapa</th>
+                                            <th>Lotes</th>
+                                            <th>R² ajustado</th>
+                                            <th>Prob (F)</th>
+                                            <th>Modelo válido</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Combinado</td>
+                                            <td>84</td>
+                                            <td>0.388</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Normal</td>
+                                            <td>46</td>
+                                            <td>0.503</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Químico</td>
+                                            <td>Atípico</td>
+                                            <td>38</td>
+                                            <td>0.374</td>
+                                            <td>0.002</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Combinado</td>
+                                            <td>79</td>
+                                            <td>0.328</td>
+                                            <td>0.000</td>
+                                            <td class="valido">Sí</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Normal</td>
+                                            <td>41</td>
+                                            <td>0.169</td>
+                                            <td>0.052</td>
+                                            <td class="no-valido">No</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Físico</td>
+                                            <td>Atípico</td>
+                                            <td>38</td>
+                                            <td>0.115</td>
+                                            <td>0.132</td>
+                                            <td class="no-valido">No</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5 class="table-title">P-valores por variable (multivariable)</h5>
+                                <table class="corr-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Variable</th>
+                                            <th>Qco. Combinado</th>
+                                            <th>Qco. Normal</th>
+                                            <th>Qco. Atípico</th>
+                                            <th>Fco. Combinado</th>
+                                            <th>Fco. Normal</th>
+                                            <th>Fco. Atípico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Acidez crudo</td>
+                                            <td>0.087</td>
+                                            <td class="sig">0.012</td>
+                                            <td>0.154</td>
+                                            <td class="sig">0.004</td>
+                                            <td class="sig">0.037</td>
+                                            <td class="sig">0.040</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clorofila crudo</td>
+                                            <td class="sig">0.000</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.763</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.612</td>
+                                            <td>0.972</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color amarillo crudo</td>
+                                            <td>0.421</td>
+                                            <td>0.168</td>
+                                            <td>0.947</td>
+                                            <td>0.506</td>
+                                            <td>0.850</td>
+                                            <td>0.513</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color rojo crudo</td>
+                                            <td>0.266</td>
+                                            <td>0.449</td>
+                                            <td>0.507</td>
+                                            <td>0.288</td>
+                                            <td>0.272</td>
+                                            <td>0.477</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fósforo</td>
+                                            <td>0.188</td>
+                                            <td>0.157</td>
+                                            <td class="sig">0.005</td>
+                                            <td>0.908</td>
+                                            <td class="sig">0.011</td>
+                                            <td>0.144</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fósforo no hidratable</td>
+                                            <td class="sig">0.033</td>
+                                            <td>0.461</td>
+                                            <td class="sig">0.000</td>
+                                            <td>0.669</td>
+                                            <td>0.607</td>
+                                            <td class="sig">0.044</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="table-note">Valores en <span class="sig-legend">amarillo</span> indican
+                                    significancia estadística (p &lt; 0.05).</p>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Lightbox para pairplots -->
+
+                        <div class="lightbox-overlay" id="lightbox-overlay">
+                            <button class="lightbox-close" id="lightbox-close">&times;</button>
+                            <img src="" alt="Ampliación" id="lightbox-img">
+                        </div>
+
                     </div>
 
-                    <!-- Lightbox para pairplots -->
+                    <div style="margin-top: 100px;"></div>
 
-                    <div class="lightbox-overlay" id="lightbox-overlay">
-                        <button class="lightbox-close" id="lightbox-close">&times;</button>
-                        <img src="" alt="Ampliación" id="lightbox-img">
+                    <div class="correlations-section">
+                        <h3 class="section-title">Presentación de Dashboard Interactivo en Power BI</h3>
+
+                        <div style="margin-top: 50px;"></div>
+
+                        <div>
+                            <video width=100% height="500" controls>
+                                <source src="../../../videos/PBI Proyecto Datos Refinería.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
 
                 </div>
-
-                <div style="margin-top: 100px;"></div>
-
-                <div>
-                    <video width=100% height="500" controls>
-                        <source src="../../../videos/PBI Proyecto Datos Refinería.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-
             </div>
+
+            <div class="botonacceso" style="margin-top: 100px;">
+                <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
+                    Volver a Proyectos de Análisis de Datos →
+                </a>
+            </div>
+
         </div>
 
-        <div class="botonacceso" style="margin-top: 100px;">
-            <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
-                Volver a Proyectos de Análisis de Datos →
-            </a>
-        </div>
+        <div class="lineadiv" style="margin: 30px;"></div>
 
-    </div>
+        <nav class="navbar navbar-expand-lg titulosecundario">
+            <div class="container-fluid">
 
-    <div class="lineadiv" style="margin: 30px;"></div>
-
-    <nav class="navbar navbar-expand-lg titulosecundario">
-        <div class="container-fluid">
-
-            <a href="#Inicio" class="brand-logo"
-                style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
+                <a href="#Inicio" class="brand-logo"
+                    style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
                     display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
                     font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
-                    LP</div>
-                <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
-                        style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
-                        style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
-            </a>
+                        LP</div>
+                    <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                            style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
+                            style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
+                </a>
 
-            <footer class="letrafooter">
-                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
-                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
-                Última actualización: <span id="fecha-actualizacion"></span><br>
-            </footer>
-        </div>
-    </nav>
+                <footer class="letrafooter">
+                    © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                    Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                    Última actualización: <span id="fecha-actualizacion"></span><br>
+                </footer>
+            </div>
+        </nav>
 
-    <script src="../../../programa.proyectofinal.js"></script>
+        <script src="../../../programa.proyectofinal.js"></script>
 
-    <!--Bootstrap para funcionamiento de la barra de navegación-->
-    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Bootstrap para funcionamiento de la barra de navegación-->
+        <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        window.addEventListener("load", function () {
-            if (window.location.hash) {
-                const elemento = document.querySelector(window.location.hash);
-                if (elemento) {
-                    setTimeout(() => {
-                        elemento.scrollIntoView({
-                            behavior: "smooth"
-                        });
-                    }, 300);
+        <script>
+            window.addEventListener("load", function () {
+                if (window.location.hash) {
+                    const elemento = document.querySelector(window.location.hash);
+                    if (elemento) {
+                        setTimeout(() => {
+                            elemento.scrollIntoView({
+                                behavior: "smooth"
+                            });
+                        }, 300);
+                    }
                 }
-            }
-        });
-    </script>
+            });
+        </script>
 
 </body>
 
