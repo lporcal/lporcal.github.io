@@ -59,7 +59,7 @@ function ventanaAuxiliarImg(ubicacion) {
     window.open(ubicacion, "Detalle de información", "width= 600, height= 600, scrollbars= NO")
 }
 
-const ULTIMA_ACTUALIZACION = "Junio 2026";
+const ULTIMA_ACTUALIZACION = "Agosto 2026";
 const elFecha = document.getElementById("fecha-actualizacion");
 if (elFecha) elFecha.textContent = ULTIMA_ACTUALIZACION;
 
