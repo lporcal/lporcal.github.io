@@ -1045,7 +1045,23 @@ li {
     z-index: 1;
 }
 
+.card-publicacion {
+    flex: 1 1 400px; 
+    border: 1px solid rgba(126,167,222,0.3); 
+    border-radius: 12px; 
+    padding: 20px;
+    margin-top: 20px;    
+    /*overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;*/
+}
 
+.card-publicacion:hover {
+    transform: translateY(-5px);
+    border-color: rgba(126, 167, 222, 0.8);
+}
 
 
 .card-proyecto {
