@@ -619,8 +619,7 @@ Icono generado con https://iconifier.net/-->
                                 <div style="margin-top: 40px;"></div>
 
                                 <div class="image-row">
-                                    <!-- acá podés sumar, por ejemplo, un scatter comparando el coeficiente
-           con 12 lotes vs. 80+ lotes combinados, si lo tenés armado -->
+
                                 </div>
 
                             </div>
@@ -740,9 +739,9 @@ Icono generado con https://iconifier.net/-->
                                         </figcaption>
                                     </figure>
                                     <figure>
-                                    <img src="../../../Imagenes/proy_modelo_predictivo/scatter_clorofila_crudo.png"
-                                        alt="Clorofila de crudo por fecha" class="expandable">
-                                    <figcaption>Clorofila de crudo por fecha</figcaption>
+                                        <img src="../../../Imagenes/proy_modelo_predictivo/scatter_clorofila_crudo.png"
+                                            alt="Clorofila de crudo por fecha" class="expandable">
+                                        <figcaption>Clorofila de crudo por fecha</figcaption>
                                     </figure>
                                     <figure>
                                         <img src="../../../Imagenes/proy_modelo_predictivo/dispersion_clorofila_color_am_df_qco.png"
@@ -1140,58 +1139,60 @@ Icono generado con https://iconifier.net/-->
 
                 </div>
             </div>
-
-            <div class="botonacceso" style="margin-top: 100px;">
-                <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
-                    Volver a Proyectos de Análisis de Datos →
-                </a>
-            </div>
-
         </div>
 
-        <div class="lineadiv" style="margin: 30px;"></div>
+        <div class="botonacceso" style="margin-top: 100px;">
+            <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
+                Volver a Proyectos de Análisis de Datos →
+            </a>
+        </div>
 
-        <nav class="navbar navbar-expand-lg titulosecundario">
-            <div class="container-fluid">
+    </div>
 
-                <a href="#Inicio" class="brand-logo"
-                    style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                    <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
+
+    <div class="lineadiv" style="margin: 30px;"></div>
+
+    <nav class="navbar navbar-expand-lg titulosecundario">
+        <div class="container-fluid">
+
+            <a href="#Inicio" class="brand-logo"
+                style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
                     display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
                     font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
-                        LP</div>
-                    <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
-                            style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
-                            style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
-                </a>
+                    LP</div>
+                <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                        style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
+                        style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
+            </a>
 
-                <footer class="letrafooter">
-                    © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
-                    Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
-                    Última actualización: <span id="fecha-actualizacion"></span><br>
-                </footer>
-            </div>
-        </nav>
+            <footer class="letrafooter">
+                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: <span id="fecha-actualizacion"></span><br>
+            </footer>
+        </div>
+    </nav>
 
-        <script src="../../../programa.proyectofinal.js"></script>
+    <script src="../../../programa.proyectofinal.js"></script>
 
-        <!--Bootstrap para funcionamiento de la barra de navegación-->
-        <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap para funcionamiento de la barra de navegación-->
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-            window.addEventListener("load", function () {
-                if (window.location.hash) {
-                    const elemento = document.querySelector(window.location.hash);
-                    if (elemento) {
-                        setTimeout(() => {
-                            elemento.scrollIntoView({
-                                behavior: "smooth"
-                            });
-                        }, 300);
-                    }
+    <script>
+        window.addEventListener("load", function () {
+            if (window.location.hash) {
+                const elemento = document.querySelector(window.location.hash);
+                if (elemento) {
+                    setTimeout(() => {
+                        elemento.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }, 300);
                 }
-            });
-        </script>
+            }
+        });
+    </script>
 
 </body>
 
