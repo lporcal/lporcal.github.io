@@ -59,9 +59,16 @@ function ventanaAuxiliarImg(ubicacion) {
     window.open(ubicacion, "Detalle de información", "width= 600, height= 600, scrollbars= NO")
 }
 
+// Actualización de la actualización en el footer
 const ULTIMA_ACTUALIZACION = "Agosto 2026";
 const elFecha = document.getElementById("fecha-actualizacion");
 if (elFecha) elFecha.textContent = ULTIMA_ACTUALIZACION;
+
+// Actualización automática del año en el footer
+document.getElementById("anio").textContent = new Date().getFullYear();
+        document.getElementById("fecha-actualizacion").textContent = new Date().toLocaleDateString("es-AR", {
+            year: "numeric", month: "long", day: "numeric"
+        });
 
 
 // Función para las pestañas de proyectos y correlaciones

@@ -3,19 +3,7 @@
 
 <head>
     <!-- Google Analytics -->
-    <script>
-        if (window.location.hostname === 'lporcal.github.io') {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
-            document.head.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-H6DX5RCE3M');
-        }
-    </script>
+    <script src="../../cookie-consent.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -345,9 +333,12 @@ Icono generado con https://iconifier.net/-->
             </a>
 
             <footer class="letrafooter">
-                © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                © <span id="anio"></span> Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                --- Todos los derechos reservados ---<br>
                 Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
                 Última actualización: <span id="fecha-actualizacion"></span><br>
+                Política de Privacidad: <a href="../../../privacidad.html"
+                    style="color: var(--petrol); text-decoration:none;">Ver</a>
             </footer>
         </div>
     </nav>

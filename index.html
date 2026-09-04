@@ -3,19 +3,7 @@
 
 <head>
     <!-- Google Analytics -->
-    <script>
-        if (window.location.hostname === 'lporcal.github.io') {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
-            document.head.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-H6DX5RCE3M');
-        }
-    </script>
+    <script src="cookie-consent.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script&family=Fuggles&family=Mooli&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="Iconos/logo_portfolio.ico" />    
+    <link rel="icon" type="image/x-icon" href="Iconos/logo_portfolio.ico" />
 
     <meta property="og:title" content="Lucas Porcal | Portfolio" />
     <meta property="og:description" content="Ingeniería de procesos y análisis de datos industrial." />
@@ -54,7 +42,7 @@
             <div class="contenedornav">
 
                 <div>
-                    <a href="#botones" class="brand-logo"
+                    <a href="#Perfil" class="brand-logo"
                         style="display:flex; align-items:center; gap:10px; text-decoration:none;">
                         <div style="width:38px; 
                         height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
@@ -154,7 +142,7 @@
 
                 <div class="navbar-nav text-center" style="margin-top: 30px;"
                     style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
-                    <a href="#botones" class="brand-logo"
+                    <a href="#Perfil" class="brand-logo"
                         style="display:flex; align-items:center; gap:10px; text-decoration:none;">
                         <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
                             display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
@@ -278,7 +266,9 @@
 
     <div class="lineadiv"></div>
 
-    <div class="container my-12 mb-10">
+    <div style="margin-top: 200px;"></div>
+
+    <div id="Perfil" class="container my-12 mb-10">
         <div class="row">
             <div class="row" style="margin: 30px;">
                 <div class="col-md-2">
@@ -356,10 +346,9 @@
             <h3 class="letranegra">Información Personal</h3>
         </div>-->
 
-        <div id="botones" class="cajabotones" style="transform: scaleX(-1);">
+        <div class="cajabotones" style="transform: scaleX(-1);">
 
-            <!-- <div class="lineadiv"></div> -->
-
+            <div style="margin-top: 200px;"></div>
 
             <div class="zona-flotante">
                 <div class="tarjeta">
@@ -1071,9 +1060,12 @@
                         </a>
 
                         <footer class="letrafooter">
-                            © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                            © <span id="anio"></span> Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                            --- Todos los derechos reservados ---<br>
                             Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
                             Última actualización: <span id="fecha-actualizacion"></span><br>
+                            Política de Privacidad: <a href="privacidad.html"
+                                style="color: var(--petrol); text-decoration:none;">Ver</a>
                         </footer>
                     </div>
                 </nav>
@@ -1083,6 +1075,7 @@
 
             <!--Bootstrap para funcionamiento de la barra de navegación-->
             <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            
 </body>
 
 </html>

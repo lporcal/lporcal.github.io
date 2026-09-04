@@ -3,19 +3,7 @@
 
 <head>
     <!-- Google Analytics -->
-    <script>
-        if (window.location.hostname === 'lporcal.github.io') {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H6DX5RCE3M';
-            document.head.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-H6DX5RCE3M');
-        }
-    </script>
+    <script src="../../../cookie-consent.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -333,58 +321,48 @@ Icono generado con https://iconifier.net/-->
                     </div>
                 </div>
             </div>
-
-            <div class="botonacceso" style="margin-top: 100px;">
-                <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
-                    Volver a Proyectos de Análisis de Datos →
-                </a>
-            </div>
-
         </div>
 
-        <div class="lineadiv" style="margin: 30px;"></div>
+        <div class="botonacceso" style="margin-top: 100px;">
+            <a href="./analisis_de_datos_tarj.html" style="color: rgba(126,167,222,0.938);">
+                Volver a Proyectos de Análisis de Datos →
+            </a>
+        </div>
 
-        <nav class="navbar navbar-expand-lg titulosecundario">
-            <div class="container-fluid">
+    </div>
 
-                <a href="#Inicio" class="brand-logo"
-                    style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-                    <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
+
+    <div class="lineadiv" style="margin: 30px;"></div>
+
+    <nav class="navbar navbar-expand-lg titulosecundario">
+        <div class="container-fluid">
+
+            <a href="#Inicio" class="brand-logo"
+                style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
                     display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
                     font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
-                        LP</div>
-                    <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
-                            style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
-                            style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
-                </a>
+                    LP</div>
+                <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                        style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
+                        style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
+            </a>
 
-                <footer class="letrafooter">
-                    © 2026 Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
-                    Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
-                    Última actualización: <span id="fecha-actualizacion"></span><br>
-                </footer>
-            </div>
-        </nav>
+            <footer class="letrafooter">
+                © <span id="anio"></span> Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                --- Todos los derechos reservados ---<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: <span id="fecha-actualizacion"></span><br>
+                Política de Privacidad: <a href="../../../privacidad.html"
+                    style="color: var(--petrol); text-decoration:none;">Ver</a>
+            </footer>
+        </div>
+    </nav>
 
-        <script src="../../../programa.proyectofinal.js"></script>
+    <script src="../../../programa.proyectofinal.js"></script>
 
-        <!--Bootstrap para funcionamiento de la barra de navegación-->
-        <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script>
-            window.addEventListener("load", function () {
-                if (window.location.hash) {
-                    const elemento = document.querySelector(window.location.hash);
-                    if (elemento) {
-                        setTimeout(() => {
-                            elemento.scrollIntoView({
-                                behavior: "smooth"
-                            });
-                        }, 300);
-                    }
-                }
-            });
-        </script>
+    <!--Bootstrap para funcionamiento de la barra de navegación-->
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
