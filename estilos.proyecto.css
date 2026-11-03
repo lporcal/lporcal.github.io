@@ -167,7 +167,7 @@ a {
 }
 
 .borderadiobotones:hover {
-    border: 2px solid rgba(126, 167, 222, 0.938);
+    border: 2px solid #c9def8;
     border-radius: 5px;
 }
 
@@ -297,6 +297,10 @@ a {
     /* Ajustá el nivel de transparencia */
     z-index: -1;
     /* Lo pone detrás del contenido */
+
+    /* desvanecido de bordes: */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 25%, #000 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 25%, #000 75%, transparent 100%);
 }
 
 .containerdebotones {
@@ -653,18 +657,16 @@ li {
     font-style: italic;
     text-decoration: none;
     border: none;
-    font-size: 16px;
-    transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+    font-size: 14px;
     width: max-content;
+    color: #c9def8;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .botonacceso:hover {
-    border: 2px solid rgba(126, 167, 222, 0.938);
-    border-radius: 20px;
-    padding: 10px;
+    border: 0.5px solid #c9def8;
+
 }
 
 .botonacceso2 {
@@ -1985,22 +1987,410 @@ body {
     align-items: center;
     border-left: 3px solid #d4c547;
 }
+
 .card-proyecto.evento-card img {
     flex: 0 0 220px;
     width: 220px;
     height: 200px;
     object-fit: cover;
-    object-position: center 20%; /* mantiene visible la cara y la parte alta del cartel */
+    object-position: center 20%;
+    /* mantiene visible la cara y la parte alta del cartel */
 }
+
 .card-proyecto.evento-card .card-body {
     flex: 1 1 0;
     min-width: 0;
 }
+
 @media (max-width: 700px) {
-    .card-proyecto.evento-card { flex-direction: column; }
+    .card-proyecto.evento-card {
+        flex-direction: column;
+    }
+
     .card-proyecto.evento-card img {
         flex: 0 0 auto;
         width: 100%;
         height: 180px;
     }
 }
+
+/* --- SECCIÓN AUTOCAD*/
+
+
+.plant3d {
+    --p3d-fondo: #0a171c;
+    --p3d-fondo-siguiente: #0a171c;
+    --p3d-teal: #31555f;
+    --p3d-perla: #c9def8;
+    --p3d-dorado: #d4c547;
+    --p3d-opacidad-img: 0.20;
+    --p3d-borde-sup: 160px;
+    --p3d-borde-inf: 160px;
+    /* opacidad de la imagen: probar entre 0.25 y 0.6 */
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 90px 8vw;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    color: var(--p3d-perla);
+    font-family: "Rubik", sans-serif;
+    background-color: var(--p3d-fondo);
+    background: linear-gradient(to bottom,
+            transparent 0,
+            var(--p3d-fondo) var(--p3d-borde-sup),
+            var(--p3d-fondo) calc(100% - var(--p3d-borde-inf)),
+            transparent 100%);
+    background-repeat: no-repeat;
+}
+
+/* Imagen de fondo con opacidad */
+.plant3d::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: url("Imagenes/AutoCad/fondo-plant3d-1.png") center right / contain no-repeat;
+    opacity: var(--p3d-opacidad-img);
+    /* desvanecido de bordes: */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 25%, #000 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 25%, #000 75%, transparent 100%);
+}
+
+/* Degradé para que el texto se lea y los bordes se mezclen con la página */
+.plant3d::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(10, 23, 28, 0.96) 0%, rgba(10, 23, 28, 0.78) 45%, rgba(10, 23, 28, 0.15) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--p3d-borde-sup), #000 calc(100% - var(--p3d-borde-inf)), transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 var(--p3d-borde-sup), #000 calc(100% - var(--p3d-borde-inf)), transparent 100%);
+}
+
+.plant3d__contenido {
+    max-width: 850px;
+}
+
+.plant3d__etiqueta {
+    display: inline-block;
+    margin: 0 0 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--p3d-dorado);
+}
+
+.plant3d__titulo {
+    margin: 0 0 16px;
+    font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.plant3d__titulo span {
+    color: var(--p3d-dorado);
+}
+
+.plant3d__bajada {
+    margin: 0 0 22px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--p3d-perla);
+}
+
+.plant3d__frases {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.plant3d__frases li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.plant3d__frases li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--p3d-dorado);
+}
+
+.plant3d__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 28px;
+    padding: 0;
+    list-style: none;
+}
+
+.plant3d__chips li {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    border: 1px solid rgba(201, 222, 248, 0.35);
+    border-radius: 999px;
+    background: rgba(49, 85, 95, 0.35);
+}
+
+.plant3d__boton {
+    display: inline-block;
+    padding: 11px 26px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--p3d-dorado);
+    border: 1.5px solid var(--p3d-dorado);
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.plant3d__boton:hover,
+.plant3d__boton:focus-visible {
+    background: var(--p3d-dorado);
+    color: var(--p3d-fondo);
+}
+
+@media (max-width: 768px) {
+    .plant3d {
+        padding: 64px 6vw;
+        min-height: 0;
+    }
+
+    .plant3d::after {
+        background: linear-gradient(180deg, rgba(10, 23, 28, 0.9) 0%, rgba(10, 23, 28, 0.82) 100%);
+    }
+}
+
+
+
+
+
+/* ---------- SECCION PROYECTOS AUTOCAD ---------- */
+
+  .pa {
+    --pa-fondo: #0a171c;
+    --pa-teal: #31555f;
+    --pa-perla: #c9def8;
+    --pa-dorado: #d4c547;
+
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 70px 6vw 90px;
+    font-family: "Rubik", sans-serif;
+    color: var(--pa-perla);
+  }
+
+  /* ---------- Encabezado ---------- */
+  .pa__etiqueta {
+    display: inline-block;
+    margin: 0 0 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pa-dorado);
+  }
+
+  .pa__titulo {
+    margin: 0 0 18px;
+    font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.1;
+    color: #fff;
+  }
+
+  .pa__titulo span { color: var(--pa-dorado); }
+
+  .pa__intro {
+    max-width: 760px;
+    margin: 0 0 14px;
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .pa__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pa__chips li,
+  .pa-card__chips li {
+    padding: 4px 12px;
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+    border: 1px solid rgba(201, 222, 248, 0.35);
+    border-radius: 999px;
+    background: rgba(49, 85, 95, 0.35);
+  }
+
+  /* ---------- Resumen ---------- */
+  .pa__resumen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 34px 0 40px;
+  }
+
+  .pa__dato {
+    min-width: 150px;
+    padding: 14px 20px;
+    border-left: 3px solid var(--pa-dorado);
+    background: rgba(49, 85, 95, 0.25);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .pa__dato strong {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  .pa__dato span {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ---------- Grilla de proyectos ---------- */
+  .pa__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 20px;
+  }
+
+  .pa-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 18px;
+    padding: 16px;
+    border: 1px solid rgba(201, 222, 248, 0.18);
+    border-radius: 10px;
+    background: rgba(49, 85, 95, 0.22);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .pa-card:hover {
+    border-color: rgba(212, 197, 71, 0.55);
+    transform: translateY(-2px);
+  }
+
+  .pa-card__img {
+    width: 150px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #0d1b21, var(--pa-teal));
+  }
+
+  .pa-card__img--vacia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: rgba(201, 222, 248, 0.45);
+  }
+
+  .pa-card__meta {
+    margin: 0 0 4px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pa-dorado);
+  }
+
+  .pa-card__titulo {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+  }
+
+  .pa-card__desc {
+    margin: 0 0 10px;
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+
+  .pa-card__pie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .pa-card__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pa-card__horas {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--pa-dorado);
+    white-space: nowrap;
+  }
+
+  /* ---------- Cierre ---------- */
+  .pa__cierre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 48px;
+  }
+
+  .pa__boton {
+    display: inline-block;
+    padding: 11px 26px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--pa-dorado);
+    border: 1.5px solid var(--pa-dorado);
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .pa__boton:hover,
+  .pa__boton:focus-visible {
+    background: var(--pa-dorado);
+    color: var(--pa-fondo);
+  }
+
+  @media (max-width: 520px) {
+    .pa__lista { grid-template-columns: 1fr; }
+    .pa-card { grid-template-columns: 1fr; }
+    .pa-card__img { width: 100%; }
+  }
