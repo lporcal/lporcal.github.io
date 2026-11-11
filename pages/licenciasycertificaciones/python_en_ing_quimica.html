@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Analytics -->
+    <script src="../../cookie-consent.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Porcal - Certificaciones / Python aplicado en Ing Química</title>
+    <link rel="stylesheet" type="text/css" href="../../estilos.proyecto.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script&family=Fuggles&family=Mooli&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../Iconos/logo_portfolio.ico" />
+    <!--Imagen tomada de https://www.pngegg.com/
+Icono generado con https://iconifier.net/-->
+
+    <meta property="og:title" content="Lucas Porcal | Portfolio" />
+    <meta property="og:description" content="Ingeniería de procesos y análisis de datos industrial." />
+    <meta property="og:image" content="https://lporcal.github.io/Imagenes/imagen_presentacion.jpg" />
+    <meta property="og:url" content="https://lporcal.github.io/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+    <div>
+        <a id="Inicio"></a>
+
+        <!--Configuración barra navegación con pantalla grande-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-inline-flex d-none py-0 fixed-top">
+            <div class="contenedornav">
+
+                <a href="../../index.html" class="brand-logo"
+                    style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                    <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
+                        display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
+                        font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
+                        LP</div>
+                    <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                            style="color:rgba(201,222,248,0.938); font-weight:400;">Lucas</span><span
+                            style="color:rgba(201,222,248,0.938); font-weight:700;">Porcal</span></span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="margin: 0 0 20px 20px">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+
+                    <ul class="navbar-nav mx-auto text-center d-lg-inline-flex d-none" style="gap: 10px">
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../acercade/acercade.html"
+                                style="color:rgba(201,222,248,0.938)">Acerca de mi Perfil</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../../pages/proyectos/proyectos.html"
+                                style="color:rgba(201,222,248,0.938)">Proyectos</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../experiencia/experiencia.html"
+                                style="color:rgba(201,222,248,0.938)">Experiencia</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../licenciasycertificaciones/certificaciones_cards.html"
+                                style="color:rgba(201,222,248,0.938)">Certificaciones</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../../pages/publicaciones/publicaciones.html"
+                                style="color:rgba(201,222,248,0.938)">Publicaciones</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center borderadiobotones">
+                            <a class="nav-link" href="../../docs/CV 2026 Lucas Porcal.pdf"
+                                download="CV 2026 Lucas Porcal.pdf" style="color:rgba(201,222,248,0.938)">Descarga CV
+                                en PDF</a>
+                        </li>
+                    </ul>
+
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <a class="micontainer"
+                            href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                            style="color: rgba(201,222,248,0.938); justify-content: center;">CONTACTO</a>
+
+                        <div
+                            style="display: flex; justify-content: center; gap: 8px; margin-top: 2px; margin-bottom: 8px;">
+                            <button class="botonicono2">
+                                <a href="https://www.linkedin.com/in/lucas-porcal/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </button>
+                            <button class="botonicono2">
+                                <a href="mailto:lucas.porcal@outlook.com">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </button>
+                            <button class="botonicono2">
+                                <a href="https://wa.me/5493584817343" target="_blank" style="text-decoration:none;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineadiv" style="top: 80px; position: fixed; z-index: 10000;"></div>
+
+        </nav>
+
+        <!--Configuración barra navegación con pantalla pequeña-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none py-0">
+            <div class="contenedornav">
+
+                <div class="navbar-nav text-center" style="margin-top: 30px;"
+                    style="padding-bottom: 2px; padding-top: 2px; padding-right: 0px;">
+                    <a href="../../index.html" class="brand-logo"
+                        style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                        <div
+                            style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
+                            LP</div>
+                        <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                                style="color:rgba(201,222,248,0.938); font-weight:400;">Lucas</span><span
+                                style="color:rgba(201,222,248,0.938); font-weight:700;">Porcal</span></span>
+                    </a>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 8px; margin-top: 15px;">
+                    <button class="botonicono2">
+                        <a href="https://www.linkedin.com/in/lucas-porcal/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </button>
+                    <button class="botonicono2">
+                        <a href="mailto:lucas.porcal@outlook.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </button>
+                    <button class="botonicono2">
+                        <a href="https://wa.me/5493584817343" target="_blank" style="text-decoration:none;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </button>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation" style="margin: 10px">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+
+                    <ul class="navbar-nav mx-auto text-center d-lg-none d-flex flex-column" style="gap: 10px">
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../../docs/CV 2026 Lucas Porcal.pdf"
+                                download="CV 2026 Lucas Porcal.pdf" style="color:rgba(201,222,248,0.938)">Descarga CV
+                                en PDF</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../acercade/acercade.html"
+                                style="color:rgba(201,222,248,0.938)">
+                                Acerca de mi Perfil</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../../pages/proyectos/proyectos.html"
+                                style="color:rgba(201,222,248,0.938)">
+                                Proyectos</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../experiencia/experiencia.html"
+                                style="color:rgba(201,222,248,0.938)">
+                                Experiencia</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2"
+                                href="../licenciasycertificaciones/certificaciones_cards.html"
+                                style="color:rgba(201,222,248,0.938)">
+                                Certificaciones</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link w-100 py-2" href="../../pages/publicaciones/publicaciones.html"
+                                style="color:rgba(201,222,248,0.938)">
+                                Publicaciones</a>
+                        </li>
+
+                        <div class="lineadiv" style="margin: 0px;"></div>
+
+                        <div class="nav-item">
+                            <a class="micontainer"
+                                href="javascript:ventanaAuxiliar('../formularios/formulariocontacto.html')"
+                                style="color: rgba(201,222,248,0.938); justify-content: center;">
+                                CONTACTO</a>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="d-none d-lg-block" style="margin-top: 150px;"></div>
+
+    <div class="infopersonal2 titulosecundario">
+        <h3 class="letranegra">Certificaciones | Python Aplicado en Ingeniería Química</h3>
+    </div>
+
+    <div class="container my-12 mb-10">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div> <!--PYTHON EN ING QUIMICA-->
+
+                    <div>
+                        <div class="cuadroproyectosanalisis2">
+                            <img src="../../Imagenes/certificaciones/cencip/imagen_portada.png"
+                                alt="La imagen no pudo descargarse"
+                                style="width: 100%; height: 250px; object-fit: cover; border-radius: 20px;">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;"></div>
+
+                    <h5 class="letraamarilla">Aplicación de Python en Ingeniería Química</h5>
+
+                    <div style="margin-top: 30px;"></div>
+
+                    <h6 class="letraclara">CENCIP - Centro de capacitación en ingeniería de procesos</h6>
+                    <p class="class2" style="margin-top: 50px;">
+                        Taller teórico - práctico trabajados en la plataforma de Google Colab</p>
+
+                    <div style="margin-top: 30px;"></div>
+
+                    <h6 class="letraclara">Desarrollo</h6>
+
+                    <ul>
+                        <li class="class5">✅ Fundamentos básicos de python: sintaxis y estructura de código para
+                            conversión de unidades
+                            y
+                            cálculo de propiedades físicas.
+
+                            <div style="margin-top: 30px;"></div>
+
+                            <div class="cuadroproyectosanalisis2">
+                                <img src="../../Imagenes/certificaciones/cencip/fundamentos_basicos_py.png"
+                                    alt="La imagen no pudo descargarse"
+                                    style="width: 80%; height: 100%; object-fit: cover; border-radius: 20px;">
+                            </div>
+
+                            <div style="margin-top: 30px;"></div>
+
+                        </li>
+
+                        <li class="class5">✅ Uso de librerías especializadas: herramientas como Numpy, Matplolib y Scipy
+                            para
+                            cálculos numéricos.
+
+                            <div style="margin-top: 30px;"></div>
+
+                            <div class="row g-3">
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/fundamentos_basicos_py_2.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/fundamentos_basicos_py_3.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/fundamentos_basicos_py_4.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 30px;"></div>
+
+                        </li>
+                        <li class="class2">✅ Caso de estudio: se calcularon propiedades de equlibrio líquido-vapor
+                            aplicando el
+                            Metodo Mc Cabe Thiele para destilación binaria.
+
+                            <div style="margin-top: 30px;"></div>
+
+                            <ul class="class2"> Cálculos realizados
+                                <li class="class5">- Importación de bibliotecas y definición de las funciones de presión
+                                    de vapor</li>
+                                <li class="class5">- Construcción del diagrama T-x-y</li>
+                                <li class="class5">- Cálculo de las curvas de burbuja y rocío</li>
+                                <li class="class5">- Cálculo de las etapas teóricas mediante McCabe-Thiele</li>
+                                <li class="class5">- Diagrama T-x-y del rehervidor</li>
+                            </ul>
+
+                            <div style="margin-top: 30px;"></div>
+
+                            <div class="row g-3">
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/destilacion_binaria_1.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/destilacion_binaria_2.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="cuadroproyectosanalisis2" style="height: 500px;">
+                                        <img src="../../Imagenes/certificaciones/cencip/destilacion_binaria_3.png"
+                                            alt="La imagen no pudo descargarse"
+                                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; object-position: left top;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 30px;"></div>
+
+                        </li>
+                    </ul>
+
+
+                    <div style="margin-top: 10px;"></div>
+
+                    <h6 class="letraclara">Periodo</h6>
+                    <div class="class2">
+                        <p>Noviembre 2026</p>
+                    </div>
+
+                    <div style="margin-top: 10px;"></div>
+
+                    <h6 class="letraclara">Habilidades</h6>
+                    <div class="card-proyecto" style="width:80%;">
+                        <div class="card-body" style="padding-bottom: 10px;">
+                            <div class="card-tags">
+                                <span class="tag">Procesos Ingeniería</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Numpy</span>
+                                <span class="tag">Matplotlib</span>
+                                <span class="tag">SciPy</span>
+                                <span class="tag">SymPy</span>
+                                <span class="tag">Google Colab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 10px;"></div>
+
+                    <h6 class="letraclara">Sitio Web</h6>
+                    <div class="card-proyecto" style="width: 80%;">
+                        <div class="card-body" style="padding-bottom: 10px;">
+                            <div class="card-tags">
+                                <span class="tag">
+                                    <a style="color: #d4c547; font-weight: bold; width: 100%;"
+                                        href="https://www.cencip.com/">CENCIP - Centro de capacitación en Ingeniería de
+                                        Procesos</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;"></div>
+
+                    <h6 class="letraclara">URL Credencial</h6>
+                    <div class="card-proyecto" style="width: 80%;">
+                        <div class="card-body" style="padding-bottom: 10px;">
+                            <div class="card-tags">
+                                <span class="tag">
+                                    <a style="color: #d4c547; font-weight: bold; width: 100%;"
+                                        href="../../docs/certificado_cencip_py_ing_qca.pdf">
+                                        Ver Credencial </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;"></div>
+
+                    <h6 class="letraclara">Horas Cátedra</h6>
+                    <div class="class2">
+                        <p>3 hs</p>
+                    </div>
+
+                </div>
+
+                <div class="lineadiv2" style="margin: 80px;"></div>
+
+                <div>
+                    <h6 class="letraclara">Expositor</h6>
+
+                    <p class="class3">
+                        Ing. químico Tomás Rodriguez Ramírez</p>
+
+                    <p class="class3">Ingeniero Químico y Maestro en Ingeniería de Procesos con 7 años de experiencia en
+                        ingeniería de procesos, simulación, optimización y análisis de datos aplicados a la industria
+                        química. Actualmente se desempeña como Ingeniero Consultor en Aspen Technology, participando en
+                        proyectos de optimización industrial mediante Machine Learning y análisis multivariable.
+                        Actualmente cursa el Doctorado en Tecnología Avanzada en el IPN-CICATA y la Maestría en
+                        Inteligencia Artificial y Analítica de Datos en la UACJ. Cuenta con experiencia en Aspen HYSYS,
+                        Aspen Plus, CHEMCAD, MATLAB, Python y GAMS, así como en proyectos de refinación, petroquímica,
+                        polímeros y otras industrias de proceso.
+                    </p>
+
+                </div>
+
+                <div class="lineadiv2" style="margin: 80px;"></div>
+
+                <div class="container my-12 mb-10">
+                    <div class="row">
+
+                        <h6 class="letraclara">Proyectos Desarrollados</h6>
+
+                        <div class="col-md-12">
+
+                            <div class="grid-proyectos">
+
+                                <!-- CARD 1: GOOGLE COLAB - PYTHON EN ING QCA -->
+                                <a href="https://colab.research.google.com/drive/1FNE1orvKUcFLFjdsDyVfVyRWoxuU-JNF?usp=drive_link"
+                                    style="text-decoration: none; width: 100%;">
+                                    <div class="card-proyecto">
+                                        <img src="../../Imagenes/certificaciones/cencip/imagen_portada.png"
+                                            alt="La imágen no pudo descargarse">
+                                        <div class="card-body">
+                                            <p class="card-titulo">Aplicación de Python en Ingeniería Química -
+                                                Proyecto
+                                                Google
+                                                Colab
+                                            </p>
+                                            <p class="card-descripcion">En el marco de un taller orientado a la aplicación de Python para la
+                                                resolución de
+                                                problemas de ingeniería química, se abordó un
+                                                caso de estudio en los que se calculó propiedades de equilibrio
+                                                líquido-vapor y se aplicó
+                                                el método de McCabe-Thiele para el diseño de destilaciones binarias.</p>
+                                            <div class="card-tags">
+                                                <span class="tag">Google Colab</span>
+                                                <span class="tag">Python</span>
+                                                <span class="tag">Ingeniería Química</span>
+                                                <span class="tag">Destilación Binaria</span>
+                                            </div>
+                                            <span class="card-link">Ver proyecto →</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="lineadiv2" style="margin: 100px;"></div>
+
+    <nav class="navbar navbar-expand-lg titulosecundario">
+        <div class="container-fluid">
+
+            <a href="#Inicio" class="brand-logo"
+                style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+                <div style="width:38px; height:38px; border-radius:50%; background:rgba(49,85,95,0.6); border:1.5px solid #d4c547; 
+                    display:flex; align-items:center; justify-content:center; font-family:'Rubik',sans-serif; 
+                    font-weight:500; font-size:13px; color:rgba(201,222,248,0.938); flex-shrink:0;">
+                    LP</div>
+                <span style="font-family:'Rubik',sans-serif; font-size:15px; white-space:nowrap;"><span
+                        style="color:rgba(201,222,248,0.938); font-weight:400;">Volver a </span><span
+                        style="color:rgba(201,222,248,0.938); font-weight:700;">INICIO</span></span>
+            </a>
+
+            <footer class="letrafooter">
+                © <span id="anio"></span> Lucas Porcal · Ingeniero Químico & Analista de Datos<br>
+                --- Todos los derechos reservados ---<br>
+                Desarrollado con HTML, CSS y JavaScript · Publicado en GitHub Pages<br>
+                Última actualización: <span id="fecha-actualizacion"></span><br>
+                Política de Privacidad: <a href="../../privacidad.html"
+                    style="color: var(--petrol); text-decoration:none;">Ver</a>
+            </footer>
+        </div>
+    </nav>
+
+    <script src="../../programa.proyectofinal.js"></script>
+
+    <!--Bootstrap para funcionamiento de la barra de navegación-->
+    <script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
