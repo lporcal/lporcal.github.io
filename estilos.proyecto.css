@@ -152,10 +152,16 @@ nav {
     box-sizing: border-box;
 }
 
-a {
+#menuNav a.nav-link {
     width: 150px;
     text-decoration: none !important;
     justify-content: center;
+}
+
+#menuNav button.botonicono2 a,
+#menuNav button.botonicono2 a:hover,
+#menuNav button.botonicono2 a:focus {
+  text-decoration: none;
 }
 
 .borderadiobotones {
@@ -2394,3 +2400,89 @@ body {
     .pa-card { grid-template-columns: 1fr; }
     .pa-card__img { width: 100%; }
   }
+
+  /* ---------- div de conexiones entre paginas ---------- */
+
+.next-page-wrap {
+    max-width: 1100px;
+    margin: 64px 25px;
+    padding: 0 1.25rem;
+}
+
+.next-page {
+  position: relative;
+  display: flex;
+  align-items:start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(201, 222, 248, 0.18);
+  background: linear-gradient(135deg, rgba(49, 85, 95, 0.35), rgba(0, 0, 0, 0.25));
+  color: rgba(201, 222, 248, 0.938);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+/* línea dorada que crece desde la izquierda */
+.next-page::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  height: 2px; width: 0;
+  background: #d4c547;
+  transition: width .4s ease;
+}
+
+.next-page:hover,
+.next-page:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(212, 197, 71, 0.55);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 24px rgba(49, 85, 95, 0.5);
+}
+.next-page:hover::before,
+.next-page:focus-visible::before { width: 100%; }
+
+.next-page__text { display: flex; flex-direction: column; gap: .25rem; }
+
+.next-page__text small {
+  color: #d4c547;
+  font-size: 10px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+.next-page__text strong {
+  font-size: clamp(10px, 3vw, 16px);
+  font-weight: 150;
+}
+.next-page__text em {
+  font-style: normal;
+  opacity: .75;
+  font-size: .70rem;
+}
+
+.next-page__arrow {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  border: 1px solid #d4c547;
+  color: #d4c547;
+  transition: transform .3s ease, background .3s ease, color .3s ease;
+}
+.next-page:hover .next-page__arrow {
+  transform: translateX(6px);
+  background: #d4c547;
+  color: #0b1519;
+}
+
+@media (max-width: 576px) {
+  .next-page { padding: 1.5rem 1.25rem; }
+  .next-page__arrow { width: 44px; height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .next-page, .next-page::before, .next-page__arrow { transition: none; }
+}
