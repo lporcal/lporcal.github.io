@@ -152,6 +152,10 @@ nav {
     box-sizing: border-box;
 }
 
+a {    
+    text-decoration: none !important;    
+}
+
 #menuNav a.nav-link {
     width: 150px;
     text-decoration: none !important;
