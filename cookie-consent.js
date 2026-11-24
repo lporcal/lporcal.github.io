@@ -3,7 +3,7 @@
  * Portfolio Lucas Porcal - lporcal.github.io
  *
  * INSTALACIÓN:
- * 1. Guardar este archivo como /js/cookie-consent.js en tu proyecto
+ * 1. Guardar este archivo como /js/cookie-consent.js
  * 2. En el <head> de CADA página HTML, ANTES del script de gtag.js, agregar:
  *
  *    <script src="/js/cookie-consent.js"></script>
@@ -60,57 +60,83 @@
   }
 
   // ---------- 4. Banner ----------
+  // Posición: "center" (ventana centrada con fondo atenuado) o "bottom" (barra inferior)
+  const BANNER_POSITION = "center";
+
   function showBanner() {
     const style = document.createElement("style");
     style.textContent = `
-      #lp-cookie-banner {
-        position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
-        background: #31555f; color: #fff;
-        padding: 1rem 1.25rem;
-        display: flex; flex-wrap: wrap; gap: 1rem;
-        align-items: center; justify-content: space-between;
-        font-family: inherit; font-size: 0.9rem;
-        box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+      #lp-cookie-overlay {
+        position: fixed; inset: 0; z-index: 9999;
+        display: flex; align-items: ${BANNER_POSITION === "center" ? "center" : "flex-end"};
+        justify-content: center;
+        background: ${BANNER_POSITION === "center" ? "rgba(20, 35, 40, 0.55)" : "transparent"};
+        padding: 1rem;
+        ${BANNER_POSITION === "center" ? "" : "pointer-events: none;"}
       }
-      #lp-cookie-banner p { margin: 0; flex: 1 1 300px; line-height: 1.4; }
+      #lp-cookie-banner {
+        pointer-events: auto;
+        background: #31555f; color: #fff;
+        width: 100%; max-width: 520px;
+        border-radius: 14px;
+        border-top: 5px solid #d4c547;
+        padding: 1.75rem 1.75rem 1.5rem;
+        font-family: inherit;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+        text-align: center;
+        animation: lpCookieIn .3s ease-out;
+      }
+      #lp-cookie-banner h2 {
+        margin: 0 0 0.75rem; font-size: 1.3rem; color: #d4c547;
+      }
+      #lp-cookie-banner p {
+        margin: 0 0 1.25rem; font-size: 1rem; line-height: 1.5;
+      }
       #lp-cookie-banner a { color: #d4c547; text-decoration: underline; }
-      #lp-cookie-banner .lp-cookie-actions { display: flex; gap: 0.6rem; flex-shrink: 0; }
+      #lp-cookie-banner .lp-cookie-actions {
+        display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;
+      }
       #lp-cookie-banner button {
-        border: none; border-radius: 6px; padding: 0.5rem 1.1rem;
-        font-weight: 600; cursor: pointer; transition: transform .15s ease;
+        flex: 1 1 140px;
+        border-radius: 8px; padding: 0.75rem 1.25rem;
+        font-size: 1rem; font-weight: 600; cursor: pointer;
+        transition: transform .15s ease;
       }
       #lp-cookie-banner button:hover { transform: translateY(-2px); }
-      #lp-cookie-accept { background: #d4c547; color: #31555f; }
-      #lp-cookie-reject { background: transparent; color: #fff; border: 1px solid #fff !important; }
-      @media (max-width: 480px) {
-        #lp-cookie-banner { flex-direction: column; align-items: stretch; text-align: center; }
-        #lp-cookie-banner .lp-cookie-actions { justify-content: center; }
+      #lp-cookie-accept { background: #d4c547; color: #31555f; border: 2px solid #d4c547; }
+      #lp-cookie-reject { background: transparent; color: #fff; border: 2px solid #fff; }
+      @keyframes lpCookieIn {
+        from { opacity: 0; transform: translateY(12px) scale(.98); }
+        to   { opacity: 1; transform: none; }
       }
     `;
     document.head.appendChild(style);
 
-    const banner = document.createElement("div");
-    banner.id = "lp-cookie-banner";
-    banner.innerHTML = `
-      <p>Este sitio usa cookies de Google Analytics para entender cómo se usa el portfolio.
-      Podés aceptar o rechazar. Más info en la <a href="/privacidad.html">Política de Privacidad</a>.</p>
-      <div class="lp-cookie-actions">
-        <button id="lp-cookie-reject">Rechazar</button>
-        <button id="lp-cookie-accept">Aceptar</button>
+    const overlay = document.createElement("div");
+    overlay.id = "lp-cookie-overlay";
+    overlay.innerHTML = `
+      <div id="lp-cookie-banner" role="dialog" aria-modal="true" aria-labelledby="lp-cookie-title">
+        <h2 id="lp-cookie-title">Tu privacidad</h2>
+        <p>Este sitio usa cookies de Google Analytics para entender desde dónde y cómo se visita el portfolio.
+        Podés aceptar o rechazar. Más info en la <a href="/privacidad.html">Política de Privacidad</a>.</p>
+        <div class="lp-cookie-actions">
+          <button id="lp-cookie-reject">Rechazar</button>
+          <button id="lp-cookie-accept">Aceptar</button>
+        </div>
       </div>
     `;
-    document.body.appendChild(banner);
+    document.body.appendChild(overlay);
 
     document.getElementById("lp-cookie-accept").addEventListener("click", () => {
       localStorage.setItem(STORAGE_KEY, "granted");
       updateConsent("granted");
-      banner.remove();
+      overlay.remove();
     });
 
     document.getElementById("lp-cookie-reject").addEventListener("click", () => {
       localStorage.setItem(STORAGE_KEY, "denied");
       updateConsent("denied");
-      banner.remove();
+      overlay.remove();
     });
   }
 })();
