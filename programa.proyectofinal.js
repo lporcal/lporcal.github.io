@@ -1,3 +1,54 @@
+/* ===== EXPERIENCIA: años de experiencia + botón expandir tarjetas ===== */
+(function () {
+    function iniciarExperiencia() {
+
+        // --- Años de experiencia (se calcula solo) ---
+        var el = document.getElementById("anios-exp");
+        if (el) {
+            var p = el.getAttribute("data-inicio").split("-");
+            var ahora = new Date();
+            var meses = (ahora.getFullYear() - parseInt(p[0], 10)) * 12 +
+                        (ahora.getMonth() + 1 - parseInt(p[1], 10));
+            el.textContent = Math.floor(meses / 12) + "+";
+        }
+
+        // --- Botón "Ver descripción / Ver menos" en cada tarjeta ---
+        document.querySelectorAll(".timeline-wrap .card-cert").forEach(function (card) {
+            var desc = card.querySelector(".card-cert-descripcion");
+            if (!desc) return;
+
+            var btn = document.createElement("span");
+            btn.className = "btn-expandir";
+            btn.setAttribute("role", "button");
+            btn.setAttribute("tabindex", "0");
+            btn.setAttribute("aria-expanded", "false");
+            btn.textContent = "Ver descripción ▾";
+            desc.insertAdjacentElement("afterend", btn);
+
+            function alternar(e) {
+                // La tarjeta es un link: evitamos que navegue al tocar el botón
+                e.preventDefault();
+                e.stopPropagation();
+                var abierta = card.classList.toggle("expandida");
+                btn.setAttribute("aria-expanded", abierta);
+                btn.textContent = abierta ? "Ver menos ▴" : "Ver descripción ▾";
+            }
+
+            btn.addEventListener("click", alternar);
+            btn.addEventListener("keydown", function (e) {
+                if (e.key === "Enter" || e.key === " ") alternar(e);
+            });
+        });
+    }
+
+    // Espera a que la página esté cargada, esté donde esté el <script>
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", iniciarExperiencia);
+    } else {
+        iniciarExperiencia();
+    }
+})();
+
 //Programa para abrir las solapas segun cada item
 
 const b1 = 'Boton 1'
@@ -306,58 +357,18 @@ function crearDato(valor, etiqueta) {
 const lista = document.getElementById("pa-lista");
 const resumen = document.getElementById("pa-resumen");
 
-PROYECTOS.forEach(function (p) { lista.appendChild(crearTarjeta(p)); });
+// Solo se ejecuta en la página que tiene estos contenedores
+if (lista && resumen) {
+  PROYECTOS.forEach(function (p) { lista.appendChild(crearTarjeta(p)); });
 
-const totalHoras = PROYECTOS.reduce(function (acc, p) { return acc + (p.horas || 0); }, 0);
-const anios = PROYECTOS.map(function (p) { return p.anio; }).filter(Boolean);
+  const totalHoras = PROYECTOS.reduce(function (acc, p) { return acc + (p.horas || 0); }, 0);
+  const anios = PROYECTOS.map(function (p) { return p.anio; }).filter(Boolean);
 
-resumen.appendChild(crearDato(String(PROYECTOS.length), PROYECTOS.length === 1 ? "Proyecto" : "Proyectos"));
-if (totalHoras > 0) resumen.appendChild(crearDato(fmt.format(totalHoras) + " h", "De dibujo registradas"));
-if (anios.length) {
-  const min = Math.min.apply(null, anios), max = Math.max.apply(null, anios);
-  resumen.appendChild(crearDato(min === max ? String(min) : min + " – " + max, "Período"));
+  resumen.appendChild(crearDato(String(PROYECTOS.length), PROYECTOS.length === 1 ? "Proyecto" : "Proyectos"));
+  if (totalHoras > 0) resumen.appendChild(crearDato(fmt.format(totalHoras) + " h", "De dibujo registradas"));
+  if (anios.length) {
+    const min = Math.min.apply(null, anios), max = Math.max.apply(null, anios);
+    resumen.appendChild(crearDato(min === max ? String(min) : min + " – " + max, "Período"));
+  }
 }
 
-/* ---------- Calculo y diseño de experiencia ---------- */
-
-// Calcula los años de experiencia a partir de la fecha de inicio
-(function () {
-  var el = document.getElementById("anios-exp");
-  if (!el) return;
-  var p = el.getAttribute("data-inicio").split("-");
-  var ahora = new Date();
-  var meses = (ahora.getFullYear() - parseInt(p[0], 10)) * 12 + (ahora.getMonth() + 1 - parseInt(p[1], 10));
-  el.textContent = Math.floor(meses / 12) + "+";
-})();
-
-
-
-// Botón "Ver descripción / Ver menos" en cada tarjeta (se muestra solo en pantallas chicas por CSS)
-(function () {
-  document.querySelectorAll(".timeline-wrap .card-cert").forEach(function (card) {
-    var desc = card.querySelector(".card-cert-descripcion");
-    if (!desc) return;
-
-    var btn = document.createElement("span");
-    btn.className = "btn-expandir";
-    btn.setAttribute("role", "button");
-    btn.setAttribute("tabindex", "0");
-    btn.setAttribute("aria-expanded", "false");
-    btn.textContent = "Ver descripción ▾";
-    desc.insertAdjacentElement("afterend", btn);
-
-    function alternar(e) {
-      // La tarjeta es un link: evitamos que navegue al tocar el botón
-      e.preventDefault();
-      e.stopPropagation();
-      var abierta = card.classList.toggle("expandida");
-      btn.setAttribute("aria-expanded", abierta);
-      btn.textContent = abierta ? "Ver menos ▴" : "Ver descripción ▾";
-    }
-
-    btn.addEventListener("click", alternar);
-    btn.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") alternar(e);
-    });
-  });
-})();
