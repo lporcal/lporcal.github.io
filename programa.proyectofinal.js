@@ -151,10 +151,10 @@ const PROYECTOS = [
     horasNota: "de dibujo",
     imagen: "../../../Imagenes/AutoCad/portada-columna-bio-glicerina.png"
   }
-  
-  ,{
+
+  , {
     titulo: "Calentamiento de tanques de grasa animal: esquema PFD",
-    descripcion: "Realice el esquema de flujo de proceso (PFD) para el calentamiento de tanques de grasa animal.",    
+    descripcion: "Realice el esquema de flujo de proceso (PFD) para el calentamiento de tanques de grasa animal.",
     rol: "Generación de PFD",
     entregables: ["Diagram flow process"],
     horas: 8,
@@ -162,9 +162,9 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-tanque-serpentin.png"
   }
 
-  ,{
+  , {
     titulo: "Cálculo y diseño de transporte neumático para tierras de blanqueo: esquema PFD",
-    descripcion: "Participé en el cálculo y diseño del sistema de transporte neumático para tierras de blanqueo. Confeccioné los esquemas de procesos (PFD) del sistema de transporte.",    
+    descripcion: "Participé en el cálculo y diseño del sistema de transporte neumático para tierras de blanqueo. Confeccioné los esquemas de procesos (PFD) del sistema de transporte.",
     rol: "Cálculos y generación de PFD",
     entregables: ["Diagram flow process", "Balances de masa y energía", "Cálculos"],
     horas: 9,
@@ -172,9 +172,9 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-transporte-neumatico.png"
   }
 
-  ,{
+  , {
     titulo: "Planta de tratamiento de glicerina: P&ID",
-    descripcion: "Confección del proyecto en AutoCAD Plant 3D de la planta de tratamiento de glicerina, incluyendo el diseño de los P&ID y los listados de componentes y equipos.",    
+    descripcion: "Confección del proyecto en AutoCAD Plant 3D de la planta de tratamiento de glicerina, incluyendo el diseño de los P&ID y los listados de componentes y equipos.",
     rol: "Ingeniería de detalles",
     entregables: ["P&ID", "Listado de elementos"],
     horas: 37.2,
@@ -182,19 +182,19 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-tratamiento-glicerina.png"
   }
 
-  ,{
+  , {
     titulo: "Planta de Oleínas: PFD",
-    descripcion: "Generé los diagramas de flujo de proceso (PFD) para la planta de oleínas, incluyendo tablas conectadas con los balances de masa a través de la función Data Link.",    
+    descripcion: "Generé los diagramas de flujo de proceso (PFD) para la planta de oleínas, incluyendo tablas conectadas con los balances de masa a través de la función Data Link.",
     rol: "Orden de inversión",
-    entregables: ["PFD", "Listado de elementos","Balances de masa en planos"],
+    entregables: ["PFD", "Listado de elementos", "Balances de masa en planos"],
     horas: 96.4,
     horasNota: "de dibujo",
     imagen: "../../../Imagenes/AutoCad/portada-decantadores-oleinas.png"
   }
-  
-,{
+
+  , {
     titulo: "Instalación de filtros de placas verticales: P&ID",
-    descripcion: "Actualización de los P&ID para una planta de blanqueo que instaló filtros de placas verticales en lugar de filtros prensas.",    
+    descripcion: "Actualización de los P&ID para una planta de blanqueo que instaló filtros de placas verticales en lugar de filtros prensas.",
     rol: "Ingeniería de detalles",
     entregables: ["P&ID", "Listado de elementos"],
     horas: 35.5,
@@ -202,9 +202,9 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-filtros-blanqueo.png"
   }
 
-  ,{
+  , {
     titulo: "Modificaciónes en planta de Neutralizado: P&ID",
-    descripcion: "Actualización de los P&ID para una planta de neutralización de aceite vegetal a la que se le realizaron mejoras de procesos varias.",    
+    descripcion: "Actualización de los P&ID para una planta de neutralización de aceite vegetal a la que se le realizaron mejoras de procesos varias.",
     rol: "Ingeniería de detalles",
     entregables: ["P&ID", "Listado de elementos"],
     horas: 27.8,
@@ -212,7 +212,7 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-modificaciones-neutralizado.png"
   }
 
-  ,{
+  , {
     titulo: "Blanqueo y Desodorización de sebo: PFD",
     descripcion: "Generé los diagramas de flujo de proceso (PFD) para una planta de blanqueo y desodorización de sebo, en el marco de un proyecto de orden de inversión.",
     rol: "Orden de inversión",
@@ -222,7 +222,7 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-blanqueo-desodorizacion-sebo.png"
   }
 
-  ,{
+  , {
     titulo: "Blanqueo y Desodorización de sebo: P&ID",
     descripcion: "Generé proyecto AutoCad Plant con los P&ID para una planta de blanqueo y desodorización de sebo.",
     rol: "Ingeniería de detalles",
@@ -232,9 +232,9 @@ const PROYECTOS = [
     imagen: "../../../Imagenes/AutoCad/portada-blanqueo-desodorizacion-sebo2.png"
   }
 
-  ,{
+  , {
     titulo: "Modificaciónes en planta de refinado Batch: P&ID",
-    descripcion: "Actualización de los P&ID para una planta de refinado de aceite vegetal batch a la que se le realizaron mejoras de procesos varias.",    
+    descripcion: "Actualización de los P&ID para una planta de refinado de aceite vegetal batch a la que se le realizaron mejoras de procesos varias.",
     rol: "Ingeniería de detalles",
     entregables: ["P&ID", "Listado de elementos"],
     horas: 1.3,
@@ -317,3 +317,47 @@ if (anios.length) {
   const min = Math.min.apply(null, anios), max = Math.max.apply(null, anios);
   resumen.appendChild(crearDato(min === max ? String(min) : min + " – " + max, "Período"));
 }
+
+/* ---------- Calculo y diseño de experiencia ---------- */
+
+// Calcula los años de experiencia a partir de la fecha de inicio
+(function () {
+  var el = document.getElementById("anios-exp");
+  if (!el) return;
+  var p = el.getAttribute("data-inicio").split("-");
+  var ahora = new Date();
+  var meses = (ahora.getFullYear() - parseInt(p[0], 10)) * 12 + (ahora.getMonth() + 1 - parseInt(p[1], 10));
+  el.textContent = Math.floor(meses / 12) + "+";
+})();
+
+
+
+// Botón "Ver descripción / Ver menos" en cada tarjeta (se muestra solo en pantallas chicas por CSS)
+(function () {
+  document.querySelectorAll(".timeline-wrap .card-cert").forEach(function (card) {
+    var desc = card.querySelector(".card-cert-descripcion");
+    if (!desc) return;
+
+    var btn = document.createElement("span");
+    btn.className = "btn-expandir";
+    btn.setAttribute("role", "button");
+    btn.setAttribute("tabindex", "0");
+    btn.setAttribute("aria-expanded", "false");
+    btn.textContent = "Ver descripción ▾";
+    desc.insertAdjacentElement("afterend", btn);
+
+    function alternar(e) {
+      // La tarjeta es un link: evitamos que navegue al tocar el botón
+      e.preventDefault();
+      e.stopPropagation();
+      var abierta = card.classList.toggle("expandida");
+      btn.setAttribute("aria-expanded", abierta);
+      btn.textContent = abierta ? "Ver menos ▴" : "Ver descripción ▾";
+    }
+
+    btn.addEventListener("click", alternar);
+    btn.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") alternar(e);
+    });
+  });
+})();
