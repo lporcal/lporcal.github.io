@@ -1,4 +1,6 @@
 /* ===== EXPERIENCIA: años de experiencia + botón expandir tarjetas ===== */
+
+
 (function () {
     function iniciarExperiencia() {
 
@@ -48,6 +50,9 @@
         iniciarExperiencia();
     }
 })();
+
+
+
 
 //Programa para abrir las solapas segun cada item
 
@@ -100,6 +105,9 @@ function abririnfo(boton) {
   document.getElementById(items[botones.indexOf(boton)]).style.display = 'block';
 }
 
+
+
+
 //Funcion para apertura de ventanas auxiliares para desplegar la informacion dentro de la solapa
 
 function ventanaAuxiliar(ubicacion) {
@@ -109,6 +117,9 @@ function ventanaAuxiliar(ubicacion) {
 function ventanaAuxiliarImg(ubicacion) {
   window.open(ubicacion, "Detalle de información", "width= 600, height= 600, scrollbars= NO")
 }
+
+
+
 
 // Actualización de la actualización en el footer
 const ULTIMA_ACTUALIZACION = "Agosto 2026";
@@ -120,6 +131,9 @@ document.getElementById("anio").textContent = new Date().getFullYear();
 document.getElementById("fecha-actualizacion").textContent = new Date().toLocaleDateString("es-AR", {
   year: "numeric", month: "long", day: "numeric"
 });
+
+
+
 
 
 // Función para las pestañas de proyectos y correlaciones
@@ -134,6 +148,10 @@ document.querySelectorAll('.corr-tab').forEach(tab => {
     if (target) target.classList.add('active');
   });
 });
+
+
+
+
 
 // Acordeón "Ver detalle técnico"
 document.querySelectorAll('.corr-toggle').forEach(btn => {
@@ -176,6 +194,10 @@ if (overlay && lightboxImg) {
     }
   });
 }
+
+
+
+
 
 // Código para página de proyectos de autocad
 
@@ -357,10 +379,13 @@ function crearDato(valor, etiqueta) {
 const lista = document.getElementById("pa-lista");
 const resumen = document.getElementById("pa-resumen");
 
-// Solo se ejecuta en la página que tiene estos contenedores
-if (lista && resumen) {
+// La lista de tarjetas se arma solo en la página de proyectos
+if (lista) {
   PROYECTOS.forEach(function (p) { lista.appendChild(crearTarjeta(p)); });
+}
 
+// El resumen se arma en cualquier página que tenga #pa-resumen
+if (resumen) {
   const totalHoras = PROYECTOS.reduce(function (acc, p) { return acc + (p.horas || 0); }, 0);
   const anios = PROYECTOS.map(function (p) { return p.anio; }).filter(Boolean);
 
